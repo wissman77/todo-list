@@ -13,4 +13,9 @@ export default class Project {
     const todoIndex = this.todos.findIndex((todo) => todo.id === todoId);
     this.todos.splice(todoIndex, 1);
   }
+
+  findTodo(todoId) {
+    const todoIndex = this.todos.findIndex((todo) => todo.id === todoId);
+    return this.todos[todoIndex];
+  }
 }
