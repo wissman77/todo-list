@@ -4,9 +4,122 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Todo List</title>
   </head>
   <body>
+    <header>
+      <div class="todo-icon"><i class="fa-solid fa-list"></i></div>
+      <div class="header"><h1>TODO.me - Todo App</h1></div>
+    </header>
+    <main class="main-content">
+      <aside class="menu">
+        <div class="main-menu">
+          <ul>
+            <li>
+              <a href="#"><i class="fa-solid fa-inbox"></i> All Todos</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-calendar-day"></i> Today</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-calendar-week"></i> This Week</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-circle-exclamation"></i> Urgent</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-check-double"></i> Completed</a>
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <div class="projects-menu">
+          <ul class="projects">
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-list-check"></i> Demo Project</a
+              >
+            </li>
+          </ul>
+          <button><i class="fa-solid fa-folder-plus"></i></button>
+        </div>
+        <div class="project-form project-modal">
+          <div class="project-modal-content">
+            <span class="project-close">&times;</span>
+            <form action="#" method="post" id="project">
+              <h2>Add Project Form</h2>
+              <label for="project-name">Project Name:</label>
+              <input
+                type="text"
+                name="project-name"
+                id="project-name"
+                required
+              />
+              <button type="submit">
+                <i class="fa-solid fa-folder-plus"></i> Add Project
+              </button>
+            </form>
+          </div>
+        </div>
+      </aside>
+      <!-- start contents section -->
+      <section class="content">
+        <h1 class="project-name">Demo Project</h1>
+        <button><i class="fa-solid fa-square-plus"></i> Add Todo</button>
+        <div class="todo-modal">
+          <div class="todo-modal-content">
+            <span class="close-todo">&times;</span>
+            <form action="#" method="post" id="todo">
+              <h2>Add Todo</h2>
+              <label for="todo-title">Todo Title:</label>
+              <input type="text" name="todo-title" id="todo-title" required />
+              <label for="due-date">Due Date:</label>
+              <input type="date" name="due-date" id="due-date" required />
+              <label for="description">Description:</label>
+              <textarea
+                name="description"
+                id="description"
+                cols="30"
+                rows="3"
+              ></textarea>
+              <label for="priority">Priority</label>
+              <select name="proiority" id="priority" required>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">Hight</option>
+              </select>
+              <button type="submit" class="add-todo-btn">
+                <i class="fa-solid fa-square-plus"></i> Add Todo
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- end content section -->
+    </main>
+    <footer>
+      <p>
+        Created by &copy;
+        <a href="https://github.com/wissman77/todo-list">Wissman77</a>
+      </p>
+    </footer>
     <div id="content"></div>
     <script src="main.js"></script>
   </body>
