@@ -1,0 +1,18 @@
+import { th } from 'date-fns/locale';
+
+export default class Project {
+  constructor(name) {
+    this.name = name;
+    this.id = Date.now();
+    this.todos = [];
+  }
+
+  addTodo(todo) {
+    this.todos.push(todo);
+  }
+
+  removeTodo(todoId) {
+    const todoIndex = this.todos.findIndex((todo) => todo.id === todoId);
+    this.todos.splice(todoIndex, 1);
+  }
+}
