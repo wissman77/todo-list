@@ -1,5 +1,3 @@
-import { th } from 'date-fns/locale';
-
 export default class Project {
   constructor(name) {
     this.name = name;
