@@ -2,7 +2,7 @@ import Project from './project';
 import ProjectManger from './projects-manager';
 import Todo from './todo';
 
-const flow = (() => {
+const programFlow = (() => {
   const _saveToLocalStorage = () => {
     localStorage.setItem('projects', JSON.stringify(ProjectManger.projects));
   };
@@ -108,4 +108,4 @@ const flow = (() => {
   };
 })();
 
-export default flow;
+export default programFlow;
