@@ -39,16 +39,16 @@ export default class ProjectManager {
   static getTodo(todoId) {
     const projectIndex =
       this._findProjectIndexAndTodoIndex(todoId).projectIndex;
-    const todoIndex = this._findProjectIndexAndTodoIndex(todo.id).todoIndex;
+    const todoIndex = this._findProjectIndexAndTodoIndex(todoId).todoIndex;
     return this.projects[projectIndex].todos[todoIndex];
   }
 
   static updateTodo(newTitle, newDueDate, newDescription, newPriority, todoId) {
     const projectIndex =
       this._findProjectIndexAndTodoIndex(todoId).projectIndex;
-    const todoIndex = this._findProjectIndexAndTodoIndex(todo.id).todoIndex;
+    const todoIndex = this._findProjectIndexAndTodoIndex(todoId).todoIndex;
     const todoToUpdate = this.projects[projectIndex].todos[todoIndex];
-    todoToUpdate.update({ newTitle, newDueDate, newDescription, newPriority });
+    todoToUpdate.update(newTitle, newDueDate, newDescription, newPriority);
     this.saveData();
   }
 
