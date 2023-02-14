@@ -1,4 +1,5 @@
 import { isThisWeek, isToday } from 'date-fns';
+import { th } from 'date-fns/locale';
 import Project from './project';
 import manageLocalStorage from './storage-manager';
 import Todo from './todo';
@@ -15,6 +16,12 @@ export default class ProjectManager {
   static removeProject(projectId) {
     const projectIndex = this._findProjectIndex(projectId);
     this.projects.splice(projectIndex, 1);
+    this.saveData();
+  }
+
+  static updateProjectName(newName, projectId) {
+    const projectIndex = this._findProjectIndex(projectId);
+    this.projects[projectIndex].updateName(newName);
     this.saveData();
   }
 
