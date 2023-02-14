@@ -18,14 +18,6 @@ export default class Project {
     this.todos.splice(index, 1);
   }
 
-  searchTodo(todoId) {
-    const index = this._findTodoIndex(todoId);
-    if (index > -1) {
-      return this.todos[index];
-    }
-    return null;
-  }
-
   renderHTML() {
     const element = `
     <li>
