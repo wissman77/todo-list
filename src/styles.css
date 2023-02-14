@@ -339,6 +339,13 @@ hr {
   color: #f72929;
 }
 
+/* ------------------ FONTAWESOME ADDITION */
+.fa-pen-to-square:hover,
+.fa-trash:hover,
+.fa-delete-left:hover {
+  cursor: pointer;
+}
+
 /* ----------------- FOOTER STYLES ------------------- */
 
 footer {
