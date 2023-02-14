@@ -31,7 +31,10 @@ export default class Todo {
         } data-todoid="${this.id}" />
         <p class="todo-title">${this.title}</p>
         <p class="todo-description">${this.description}</p>
-        <div class="todo-duedate">
+        <div class="todo-duedate ${format(new Date(this.dueDate), 'dd-MM-yyyy')}
+          ${
+            isBefore(new Date(this.dueDate), endOfYesterday()) ? `expired` : ``
+          }">
           ${format(new Date(this.dueDate), 'dd-MM-yyyy')}
           ${
             isBefore(new Date(this.dueDate), endOfYesterday()) ? ` Expired` : ``
