@@ -9,6 +9,10 @@ export default class Project {
     return this.todos.findIndex((todo) => todo.id === todoId);
   }
 
+  updateName(newName) {
+    this.name = newName;
+  }
+
   addTodo(todo) {
     this.todos.push(todo);
   }
