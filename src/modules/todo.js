@@ -8,7 +8,14 @@ export default class Todo {
     this.id = Date.now().toString();
   }
 
-  render() {
-    console.log('Hanaha');
+  toggleComplete() {
+    this.completed = !this.completed;
+  }
+
+  update(newTitle, newDueDate, newDescription, newPriority) {
+    this.title = newTitle;
+    this.dueDate = newDueDate;
+    this.description - newDescription;
+    this.priority = newPriority;
   }
 }
