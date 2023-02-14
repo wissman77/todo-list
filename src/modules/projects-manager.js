@@ -1,5 +1,6 @@
 import Project from './project';
 import manageLocalStorage from './storage-manager';
+import Todo from './todo';
 
 export default class ProjectManager {
   static projects = [];
@@ -16,8 +17,14 @@ export default class ProjectManager {
     this.saveData();
   }
 
-  static addTodo(todo, projectId) {
+  static getProjectNameById(projectId) {
     const projectIndex = this._findProjectIndex(projectId);
+    return this.projects[projectIndex].name;
+  }
+
+  static addTodo(titile, dueDate, description, priority, projectId) {
+    const projectIndex = this._findProjectIndex(projectId);
+    const todo = new Todo(titile, dueDate, description, priority);
     this.projects[projectIndex].addTodo(todo);
     this.saveData();
   }
@@ -29,13 +36,12 @@ export default class ProjectManager {
     this.saveData();
   }
 
-  static updateTodo(todo) {
-    const projectIndex = this._findProjectIndexAndTodoIndex(
-      todo.id
-    ).projectIndex;
+  static updateTodo(newTitle, newDueDate, newDescription, newPriority, todoId) {
+    const projectIndex =
+      this._findProjectIndexAndTodoIndex(todoId).projectIndex;
     const todoIndex = this._findProjectIndexAndTodoIndex(todo.id).todoIndex;
     const todoToUpdate = this.projects[projectIndex].todos[todoIndex];
-    todoToUpdate.update(todo);
+    todoToUpdate.update({ newTitle, newDueDate, newDescription, newPriority });
     this.saveData();
   }
 
