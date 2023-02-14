@@ -1,5 +1,4 @@
 import { isThisWeek, isToday } from 'date-fns';
-import { th } from 'date-fns/locale';
 import Project from './project';
 import manageLocalStorage from './storage-manager';
 import Todo from './todo';
