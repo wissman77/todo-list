@@ -36,12 +36,32 @@ export default class ProjectManager {
     this.saveData();
   }
 
+  static getTodo(todoId) {
+    const projectIndex =
+      this._findProjectIndexAndTodoIndex(todoId).projectIndex;
+    const todoIndex = this._findProjectIndexAndTodoIndex(todo.id).todoIndex;
+    return this.projects[projectIndex].todos[todoIndex];
+  }
+
   static updateTodo(newTitle, newDueDate, newDescription, newPriority, todoId) {
     const projectIndex =
       this._findProjectIndexAndTodoIndex(todoId).projectIndex;
     const todoIndex = this._findProjectIndexAndTodoIndex(todo.id).todoIndex;
     const todoToUpdate = this.projects[projectIndex].todos[todoIndex];
     todoToUpdate.update({ newTitle, newDueDate, newDescription, newPriority });
+    this.saveData();
+  }
+
+  static getTodosByProjectId(projectId) {
+    const projectIndex = this._findProjectIndex(projectId);
+    return this.projects[projectIndex].todos;
+  }
+
+  static toggleCompelteTodo(todoId) {
+    const projectIndex =
+      this._findProjectIndexAndTodoIndex(todoId).projectIndex;
+    const todoIndex = this._findProjectIndexAndTodoIndex(todoId).todoIndex;
+    this.projects[projectIndex].todos[todoIndex].toggleComplete();
     this.saveData();
   }
 
@@ -71,7 +91,7 @@ export default class ProjectManager {
   static getProjectName(todoId) {
     let projectName = '';
     this.projects.forEach((project) => {
-      project.forEach((todo) => {
+      project.todos.forEach((todo) => {
         if (todo.id === todoId) {
           projectName = project.name;
         }
