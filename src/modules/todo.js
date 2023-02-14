@@ -22,7 +22,7 @@ export default class Todo {
     this.priority = newPriority;
   }
 
-  render() {
+  renderHTML() {
     const container = document.createElement('div');
     container.classList.add('todo-container');
 
