@@ -26,39 +26,13 @@
     </header>
     <main class="main-content">
       <aside class="menu">
-        <div class="main-menu">
-          <ul>
-            <li>
-              <a href="#"><i class="fa-solid fa-inbox"></i> All Todos</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-calendar-day"></i> Today</a>
-            </li>
-            <li>
-              <a href="#"
-                ><i class="fa-solid fa-calendar-week"></i> This Week</a
-              >
-            </li>
-            <li>
-              <a href="#"
-                ><i class="fa-solid fa-circle-exclamation"></i> Urgent</a
-              >
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-check-double"></i> Completed</a>
-            </li>
-          </ul>
-        </div>
-        <hr />
         <div class="projects-menu">
-          <ul class="projects">
-            <li>
-              <a href="#"
-                ><i class="fa-solid fa-list-check"></i> Demo Project</a
-              >
-            </li>
-          </ul>
-          <button><i class="fa-solid fa-folder-plus"></i></button>
+          <!-- start projects names -->
+          <ul class="projects"></ul>
+          <!-- end projects names -->
+          <button class="add-project">
+            <i class="fa-solid fa-folder-plus"></i>
+          </button>
         </div>
         <div class="project-form project-modal">
           <div class="project-modal-content">
@@ -82,7 +56,9 @@
       <!-- start contents section -->
       <section class="content">
         <h1 class="project-name">Demo Project</h1>
-        <button><i class="fa-solid fa-square-plus"></i> Add Todo</button>
+        <button class="add-todo">
+          <i class="fa-solid fa-square-plus"></i> Add Todo
+        </button>
         <div class="todo-modal">
           <div class="todo-modal-content">
             <span class="close-todo">&times;</span>
@@ -111,6 +87,7 @@
             </form>
           </div>
         </div>
+        <div class="todos-list"></div>
       </section>
       <!-- end content section -->
     </main>
