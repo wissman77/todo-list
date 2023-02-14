@@ -1,4 +1,4 @@
-import { format } from 'date-fns';
+import { endOfYesterday, format, isBefore } from 'date-fns';
 import programFlow from './program-flow';
 
 const programUI = ((doc) => {
@@ -116,6 +116,12 @@ const programUI = ((doc) => {
 
     const projectId = currentProjectId;
     const todoId = currentTodoId;
+
+    // check if dueDate is in the past
+    if (isBefore(new Date(dueDateInput.value), endOfYesterday())) {
+      alert('please choose present or a future date!');
+      return;
+    }
 
     if (todoButton.textContent.includes('Add')) {
       programFlow.addNewTodo(
