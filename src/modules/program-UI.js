@@ -214,7 +214,6 @@ const programUI = ((doc) => {
     const todosList = doc.querySelector('.todos-list');
     todosList.innerHTML = '';
     todos.forEach((todo) => {
-      console.log(todo);
       const projectId = programFlow.getProjectIdForTodo(todo.id);
 
       const container = doc.createElement('div');
@@ -247,6 +246,10 @@ const programUI = ((doc) => {
       dueDatePara.classList.add('todo-duedate');
       dueDatePara.textContent = format(new Date(todo.dueDate), 'dd-MM-yyyy');
       todoBody.appendChild(dueDatePara);
+      if (isBefore(new Date(todo.dueDate), endOfYesterday())) {
+        dueDatePara.style.color = 'red';
+        dueDatePara.textContent += ' Expired';
+      }
 
       const projectNamePara = doc.createElement('p');
       projectNamePara.classList.add('todo-project-name');

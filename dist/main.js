@@ -3751,7 +3751,6 @@ const programUI = ((doc) => {
     const todosList = doc.querySelector('.todos-list');
     todosList.innerHTML = '';
     todos.forEach((todo) => {
-      console.log(todo);
       const projectId = _program_flow__WEBPACK_IMPORTED_MODULE_0__["default"].getProjectIdForTodo(todo.id);
 
       const container = doc.createElement('div');
@@ -3784,6 +3783,10 @@ const programUI = ((doc) => {
       dueDatePara.classList.add('todo-duedate');
       dueDatePara.textContent = (0,date_fns__WEBPACK_IMPORTED_MODULE_3__["default"])(new Date(todo.dueDate), 'dd-MM-yyyy');
       todoBody.appendChild(dueDatePara);
+      if ((0,date_fns__WEBPACK_IMPORTED_MODULE_1__["default"])(new Date(todo.dueDate), (0,date_fns__WEBPACK_IMPORTED_MODULE_2__["default"])())) {
+        dueDatePara.style.color = 'red';
+        dueDatePara.textContent += ' Expired';
+      }
 
       const projectNamePara = doc.createElement('p');
       projectNamePara.classList.add('todo-project-name');
