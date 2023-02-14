@@ -1,3 +1,4 @@
+import { isThisWeek, isToday } from 'date-fns';
 import Project from './project';
 import manageLocalStorage from './storage-manager';
 import Todo from './todo';
@@ -55,6 +56,66 @@ export default class ProjectManager {
   static getTodosByProjectId(projectId) {
     const projectIndex = this._findProjectIndex(projectId);
     return this.projects[projectIndex].todos;
+  }
+
+  // varius method for
+  static getAllTodos() {
+    const allTodos = [];
+    for (const project of this.projects) {
+      for (const todo of project.todos) {
+        allTodos.push(todo);
+      }
+    }
+    return allTodos;
+  }
+
+  static getTodayTodos() {
+    const todayTodos = [];
+    for (const project of this.projects) {
+      for (const todo of project.todos) {
+        if (isToday(new Date(todo.dueDate))) {
+          todayTodos.push(todo);
+        }
+      }
+    }
+
+    return todayTodos;
+  }
+
+  static getTodosForWeek() {
+    const weekTodos = [];
+    for (const project of this.projects) {
+      for (const todo of project.todos) {
+        if (isThisWeek(new Date(todo.dueDate))) {
+          weekTodos.push(todo);
+        }
+      }
+    }
+    return weekTodos;
+  }
+
+  static getUrgentTodos() {
+    const urgentTodos = [];
+    for (const project of this.projects) {
+      for (const todo of project.todos) {
+        if (todo.priority === 'high') {
+          urgentTodos.push(todo);
+        }
+      }
+    }
+    return urgentTodos;
+  }
+
+  static getCompletedTodos() {
+    const completedTodos = [];
+    for (const project of this.projects) {
+      for (const todo of project.todos) {
+        if (todo.completed) {
+          completedTodos.push(todo);
+        }
+      }
+    }
+    return completedTodos;
   }
 
   static toggleCompelteTodo(todoId) {
