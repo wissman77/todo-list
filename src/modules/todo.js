@@ -5,6 +5,10 @@ export default class Todo {
     this.description = description;
     this.priority = priority;
     this.completed = false;
-    this.id = Date.now();
+    this.id = Date.now().toString();
+  }
+
+  render() {
+    console.log('Hanaha');
   }
 }

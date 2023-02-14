@@ -3,6 +3,7 @@
   --bg-secondary-color: #03c988;
   --white-color: #fff;
   --gray-color: #838585;
+  --blue-color: #86c4f7;
 }
 
 * {
@@ -41,7 +42,7 @@ header {
   background: var(--bg-secondary-color);
   padding: 10px;
   min-height: 82vh;
-  min-width: 20vw;
+  min-width: 30vw;
 }
 
 .menu ul {
@@ -73,6 +74,23 @@ hr {
   outline: none;
   border: 0;
   cursor: pointer;
+}
+
+.projects li {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.projects .btn {
+  font-size: 1rem;
+  display: inline;
+  width: auto;
+  background: transparent;
+}
+
+.projects a {
+  font-size: 1rem;
 }
 
 .menu a:hover {
@@ -114,6 +132,13 @@ hr {
   color: var(--bg-secondary-color);
 }
 
+.projects-menu .add-project {
+  background: var(--blue-color);
+}
+.projects-menu .add-project:hover {
+  background: var(--white-color);
+}
+
 #project {
   display: flex;
   flex-direction: column;
@@ -142,7 +167,6 @@ hr {
 }
 
 .content button {
-  width: auto;
   color: var(--bg-primary-color);
   background: transparent;
   outline: none;
@@ -153,6 +177,7 @@ hr {
   font-weight: bold;
   padding: 10px;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .content button:hover {
@@ -220,6 +245,95 @@ hr {
   margin-top: 10px;
 }
 
+/* ----------------- TODOS rendering ----------------- */
+
+.todos-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.todo-container input[type='checkbox'] {
+  accent-color: var(--bg-secondary-color);
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--gray-color);
+  border-radius: 50%;
+  background-clip: content-box;
+  padding: 3px;
+}
+
+.todo-container input[type='checkbox']:checked {
+  background-color: var(--bg-secondary-color);
+}
+
+.todo-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-title {
+  font-weight: bolder;
+}
+
+.todo-description {
+  font-size: 0.8rem;
+}
+
+.todo-project-name {
+  width: 50%;
+  background: var(--blue-color);
+  color: var(--bg-primary-color);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  background: var(--bg-secondary-color);
+  width: 100%;
+}
+
+.low {
+  color: #f7f75a;
+  text-decoration: wavy;
+}
+
+.medium {
+  color: #6781f5;
+}
+
+.high {
+  color: #f82929;
+}
+
+.danger {
+  color: #f72929;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: var(--gray-color);
+}
+
 /* ----------------- FOOTER STYLES ------------------- */
 
 footer {
@@ -232,4 +346,10 @@ footer {
 footer a {
   color: var(--white-color);
   text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .menu {
+    min-width: 50vw;
+  }
 }

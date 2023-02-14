@@ -12,12 +12,14 @@ const programFlow = (() => {
   };
 
   const _findProjectIndex = (projectId) => {
+    _getProjectsFromLocalStorage();
     return ProjectManger.projects.findIndex(
       (project) => project.id === projectId
     );
   };
 
   const _findTodoIndex = (projectIndex, todoId) => {
+    _getProjectsFromLocalStorage();
     return ProjectManger.projects[projectIndex].todos.findIndex(
       (todo) => todo.id === todoId
     );
@@ -37,35 +39,58 @@ const programFlow = (() => {
   };
 
   const addNewProject = (name) => {
-    _getProjectsFromLocalStorage();
     ProjectManger.projects.push(new Project(name));
     _saveToLocalStorage();
   };
 
   const deleteProject = (projectId) => {
-    _getProjectsFromLocalStorage();
     const index = _findProjectIndex(projectId);
     ProjectManger.projects.splice(index, 1);
     _saveToLocalStorage();
   };
 
+  const getProjectName = (projectId) => {
+    const projectIndex = _findProjectIndex(projectId);
+    return ProjectManger.projects[projectIndex].name;
+  };
+
   const updateProject = (name, projectId) => {
-    _getProjectsFromLocalStorage();
     const index = _findProjectIndex(projectId);
     ProjectManger.projects[index].name = name;
     _saveToLocalStorage();
   };
 
+  const getProjectTodos = (projectId) => {
+    const index = _findProjectIndex(projectId);
+    return ProjectManger.projects[index].todos;
+  };
+
+  const getProjectIdForTodo = (todoId) => {
+    let projectId;
+    ProjectManger.projects.forEach((project) => {
+      project.todos.forEach((todo) => {
+        if (todo.id === todoId) {
+          projectId = project.id;
+        }
+      });
+    });
+    return projectId;
+  };
+
   const addNewTodo = (title, dueDate, description, priority, projectId) => {
-    _getProjectsFromLocalStorage();
     const todo = new Todo(title, dueDate, description, priority);
     const index = _findProjectIndex(projectId);
-    ProjectManger.projects[index].push(todo);
+    ProjectManger.projects[index].todos.push(todo);
     _saveToLocalStorage();
   };
 
+  const getTodo = (todoId, projectId) => {
+    const projectIndex = _findProjectIndex(projectId);
+    const todoIndex = _findTodoIndex(projectIndex, todoId);
+    return ProjectManger.projects[projectIndex].todos[todoIndex];
+  };
+
   const deleteTodo = (todoId, projectId) => {
-    _getProjectsFromLocalStorage();
     const projectIndex = _findProjectIndex(projectId);
     const todoIndex = _findTodoIndex(projectIndex, todoId);
     ProjectManger.projects[projectIndex].todos.splice(todoIndex, 1);
@@ -73,11 +98,13 @@ const programFlow = (() => {
   };
 
   const updateTodo = (
-    { title, dueDate, description, priority },
+    title,
+    dueDate,
+    description,
+    priority,
     projectId,
     todoId
   ) => {
-    _getProjectsFromLocalStorage();
     const projectIndex = _findProjectIndex(projectId);
     const todoIndex = _findTodoIndex(projectIndex, todoId);
     const todo = ProjectManger.projects[projectIndex].todos[todoIndex];
@@ -100,8 +127,12 @@ const programFlow = (() => {
     loadProjects,
     addNewProject,
     deleteProject,
+    getProjectName,
+    getProjectIdForTodo,
     updateProject,
+    getProjectTodos,
     addNewTodo,
+    getTodo,
     deleteTodo,
     updateTodo,
     completeTodo,
