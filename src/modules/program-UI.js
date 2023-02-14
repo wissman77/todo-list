@@ -117,13 +117,12 @@ const programUI = ((doc) => {
     const projectId = currentProjectId;
     const todoId = currentTodoId;
 
-    // check if dueDate is in the past
-    if (isBefore(new Date(dueDateInput.value), endOfYesterday())) {
-      alert('please choose present or a future date!');
-      return;
-    }
-
     if (todoButton.textContent.includes('Add')) {
+      // check if dueDate is in the past
+      if (isBefore(new Date(dueDateInput.value), endOfYesterday())) {
+        alert('please choose present or a future date!');
+        return;
+      }
       programFlow.addNewTodo(
         titleInput.value,
         new Date(dueDateInput.value),
@@ -247,7 +246,7 @@ const programUI = ((doc) => {
       dueDatePara.textContent = format(new Date(todo.dueDate), 'dd-MM-yyyy');
       todoBody.appendChild(dueDatePara);
       if (isBefore(new Date(todo.dueDate), endOfYesterday())) {
-        dueDatePara.style.color = 'red';
+        dueDatePara.classList.add('expired');
         dueDatePara.textContent += ' Expired';
       }
 

@@ -334,6 +334,11 @@ hr {
   color: var(--gray-color);
 }
 
+.expired {
+  font-size: 0.8rem;
+  color: #f72929;
+}
+
 /* ----------------- FOOTER STYLES ------------------- */
 
 footer {
