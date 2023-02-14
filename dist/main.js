@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  --bg-primary-color: #13005a;\n  --bg-secondary-color: #03c988;\n  --white-color: #fff;\n  --gray-color: #838585;\n  --blue-color: #86c4f7;\n}\n\n* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  font-family: 'Poppins', sans-serif;\n}\n\n/* ----------------- HEADER STYLES ------------------- */\n\nheader {\n  display: flex;\n  align-items: center;\n  justify-content: flex-start;\n  gap: 100px;\n  color: var(--white-color);\n  background: var(--bg-primary-color);\n  padding: 10px;\n}\n\n.todo-icon {\n  font-size: 2rem;\n}\n\n.main-content {\n  display: flex;\n}\n\n/* ----------------- NAV STYLES ------------------- */\n\n.menu {\n  background: var(--bg-secondary-color);\n  padding: 10px;\n  min-height: 82vh;\n  min-width: 30vw;\n}\n\n.menu ul {\n  list-style: none;\n}\n\n.menu li {\n  margin: 10px;\n}\n\n.menu a,\n.menu button {\n  color: var(--bg-primary-color);\n  text-decoration: none;\n  font-size: 1.1rem;\n  border-radius: 5px;\n  padding: 10px;\n  display: block;\n  width: 100%;\n}\n\nhr {\n  border-bottom: 2px solid var(--gray-color);\n  outline: none;\n}\n\n.menu button {\n  background: var(--bg-secondary-color);\n  outline: none;\n  border: 0;\n  cursor: pointer;\n}\n\n.projects li {\n  display: flex;\n  align-items: center;\n  justify-content: start;\n}\n\n.projects .btn {\n  font-size: 1rem;\n  display: inline;\n  width: auto;\n  background: transparent;\n}\n\n.projects a {\n  font-size: 1rem;\n}\n\n.menu a:hover {\n  background: var(--white-color);\n}\n\n.project-modal {\n  display: none;\n  position: fixed;\n  z-index: 1;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  background: rgba(0, 0, 0, 0.4);\n}\n\n.project-modal-content {\n  background-color: var(--white-color);\n  margin: 15% auto;\n  padding: 20px;\n  border: 1px solid var(--white-color);\n  width: 50%;\n  border-radius: 10px;\n  color: var(--bg-primary-color);\n  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.7);\n}\n.project-close {\n  float: right;\n  font-size: 2rem;\n  font-weight: bold;\n  color: var(--bg-primary-color);\n}\n\n.project-close:hover,\n.project-close:focus {\n  cursor: pointer;\n  text-decoration: none;\n  color: var(--bg-secondary-color);\n}\n\n.projects-menu .add-project {\n  background: var(--blue-color);\n}\n.projects-menu .add-project:hover {\n  background: var(--white-color);\n}\n\n#project {\n  display: flex;\n  flex-direction: column;\n  padding: 10px 20px;\n  gap: 10px;\n}\n\n#project input {\n  padding: 5px;\n  border-radius: 5px;\n  outline: none;\n  border: 1px solid #000;\n  font-size: 1.2rem;\n  accent-color: var(--bg-primary-color);\n}\n/* ----------------- CONTENT STYLES ------------------- */\n\n.content {\n  padding: 10px;\n  width: 100%;\n}\n\n.content h1 {\n  margin-bottom: 20px;\n  color: var(--gray-color);\n}\n\n.content button {\n  color: var(--bg-primary-color);\n  background: transparent;\n  outline: none;\n  border: 0;\n  text-align: left;\n  cursor: pointer;\n  font-size: 1.2rem;\n  font-weight: bold;\n  padding: 10px;\n  border-radius: 5px;\n  margin-bottom: 10px;\n}\n\n.content button:hover {\n  background-color: var(--bg-secondary-color);\n}\n\n.todo-modal {\n  display: none;\n  position: fixed;\n  z-index: 1;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  background: rgba(0, 0, 0, 0.4);\n}\n\n.todo-modal-content {\n  background-color: var(--white-color);\n  margin: 7% auto;\n  padding: 10px;\n  border: 1px solid var(--white-color);\n  width: 50%;\n  border-radius: 10px;\n  color: var(--bg-primary-color);\n  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.7);\n}\n.close-todo {\n  float: right;\n  font-size: 2rem;\n  font-weight: bold;\n  color: var(--bg-primary-color);\n}\n\n.close-todo:hover,\n.close-todo:focus {\n  cursor: pointer;\n  text-decoration: none;\n  color: var(--bg-secondary-color);\n}\n\n#todo {\n  display: flex;\n  flex-direction: column;\n  padding: 5px 20px;\n  gap: 5px;\n}\n\n#todo input,\n#todo select,\n#todo textarea {\n  padding: 3px;\n  border-radius: 5px;\n  outline: none;\n  border: 1px solid #000;\n  font-size: 1rem;\n  accent-color: var(--bg-primary-color);\n  font-family: 'Poppins', sans-serif;\n}\n\n#todo button {\n  text-align: center;\n  width: 100%;\n  background-color: var(--bg-secondary-color);\n  margin-top: 10px;\n}\n\n/* ----------------- TODOS rendering ----------------- */\n\n.todos-list {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-around;\n  gap: 20px;\n}\n\n.todo-container {\n  display: flex;\n  flex-direction: column;\n  gap: 5px;\n  width: 100%;\n  padding: 10px;\n  border-radius: 10px;\n  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;\n}\n\n.todo-container input[type='checkbox'] {\n  accent-color: var(--bg-secondary-color);\n  appearance: none;\n  width: 20px;\n  height: 20px;\n  border: 1px solid var(--gray-color);\n  border-radius: 50%;\n  background-clip: content-box;\n  padding: 3px;\n}\n\n.todo-container input[type='checkbox']:checked {\n  background-color: var(--bg-secondary-color);\n}\n\n.todo-body {\n  display: flex;\n  flex-direction: column;\n}\n\n.todo-title {\n  font-weight: bolder;\n}\n\n.todo-description {\n  font-size: 0.8rem;\n}\n\n.todo-project-name {\n  width: 50%;\n  background: var(--blue-color);\n  color: var(--bg-primary-color);\n  border-radius: 10px;\n  padding: 5px;\n}\n\n.actions {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  padding: 10px;\n  border-radius: 10px;\n  background: var(--bg-secondary-color);\n  width: 100%;\n}\n\n.low {\n  color: #f7f75a;\n  text-decoration: wavy;\n}\n\n.medium {\n  color: #6781f5;\n}\n\n.high {\n  color: #f82929;\n}\n\n.danger {\n  color: #f72929;\n  cursor: pointer;\n}\n\n.completed {\n  text-decoration: line-through;\n  color: var(--gray-color);\n}\n\n.expired {\n  font-size: 0.8rem;\n  color: #f72929;\n}\n\n/* ----------------- FOOTER STYLES ------------------- */\n\nfooter {\n  background: var(--bg-primary-color);\n  padding: 10px;\n  text-align: center;\n  color: var(--white-color);\n}\n\nfooter a {\n  color: var(--white-color);\n  text-decoration: none;\n}\n\n@media (max-width: 700px) {\n  .menu {\n    min-width: 50vw;\n  }\n}\n", "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"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","sourcesContent":[":root {\n  --bg-primary-color: #13005a;\n  --bg-secondary-color: #03c988;\n  --white-color: #fff;\n  --gray-color: #838585;\n  --blue-color: #86c4f7;\n}\n\n* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  font-family: 'Poppins', sans-serif;\n}\n\n/* ----------------- HEADER STYLES ------------------- */\n\nheader {\n  display: flex;\n  align-items: center;\n  justify-content: flex-start;\n  gap: 100px;\n  color: var(--white-color);\n  background: var(--bg-primary-color);\n  padding: 10px;\n}\n\n.todo-icon {\n  font-size: 2rem;\n}\n\n.main-content {\n  display: flex;\n}\n\n/* ----------------- NAV STYLES ------------------- */\n\n.menu {\n  background: var(--bg-secondary-color);\n  padding: 10px;\n  min-height: 82vh;\n  min-width: 30vw;\n}\n\n.menu ul {\n  list-style: none;\n}\n\n.menu li {\n  margin: 10px;\n}\n\n.menu a,\n.menu button {\n  color: var(--bg-primary-color);\n  text-decoration: none;\n  font-size: 1.1rem;\n  border-radius: 5px;\n  padding: 10px;\n  display: block;\n  width: 100%;\n}\n\nhr {\n  border-bottom: 2px solid var(--gray-color);\n  outline: none;\n}\n\n.menu button {\n  background: var(--bg-secondary-color);\n  outline: none;\n  border: 0;\n  cursor: pointer;\n}\n\n.projects li {\n  display: flex;\n  align-items: center;\n  justify-content: start;\n}\n\n.projects .btn {\n  font-size: 1rem;\n  display: inline;\n  width: auto;\n  background: transparent;\n}\n\n.projects a {\n  font-size: 1rem;\n}\n\n.menu a:hover {\n  background: var(--white-color);\n}\n\n.project-modal {\n  display: none;\n  position: fixed;\n  z-index: 1;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  background: rgba(0, 0, 0, 0.4);\n}\n\n.project-modal-content {\n  background-color: var(--white-color);\n  margin: 15% auto;\n  padding: 20px;\n  border: 1px solid var(--white-color);\n  width: 50%;\n  border-radius: 10px;\n  color: var(--bg-primary-color);\n  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.7);\n}\n.project-close {\n  float: right;\n  font-size: 2rem;\n  font-weight: bold;\n  color: var(--bg-primary-color);\n}\n\n.project-close:hover,\n.project-close:focus {\n  cursor: pointer;\n  text-decoration: none;\n  color: var(--bg-secondary-color);\n}\n\n.projects-menu .add-project {\n  background: var(--blue-color);\n}\n.projects-menu .add-project:hover {\n  background: var(--white-color);\n}\n\n#project {\n  display: flex;\n  flex-direction: column;\n  padding: 10px 20px;\n  gap: 10px;\n}\n\n#project input {\n  padding: 5px;\n  border-radius: 5px;\n  outline: none;\n  border: 1px solid #000;\n  font-size: 1.2rem;\n  accent-color: var(--bg-primary-color);\n}\n/* ----------------- CONTENT STYLES ------------------- */\n\n.content {\n  padding: 10px;\n  width: 100%;\n}\n\n.content h1 {\n  margin-bottom: 20px;\n  color: var(--gray-color);\n}\n\n.content button {\n  color: var(--bg-primary-color);\n  background: transparent;\n  outline: none;\n  border: 0;\n  text-align: left;\n  cursor: pointer;\n  font-size: 1.2rem;\n  font-weight: bold;\n  padding: 10px;\n  border-radius: 5px;\n  margin-bottom: 10px;\n}\n\n.content button:hover {\n  background-color: var(--bg-secondary-color);\n}\n\n.todo-modal {\n  display: none;\n  position: fixed;\n  z-index: 1;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  background: rgba(0, 0, 0, 0.4);\n}\n\n.todo-modal-content {\n  background-color: var(--white-color);\n  margin: 7% auto;\n  padding: 10px;\n  border: 1px solid var(--white-color);\n  width: 50%;\n  border-radius: 10px;\n  color: var(--bg-primary-color);\n  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.7);\n}\n.close-todo {\n  float: right;\n  font-size: 2rem;\n  font-weight: bold;\n  color: var(--bg-primary-color);\n}\n\n.close-todo:hover,\n.close-todo:focus {\n  cursor: pointer;\n  text-decoration: none;\n  color: var(--bg-secondary-color);\n}\n\n#todo {\n  display: flex;\n  flex-direction: column;\n  padding: 5px 20px;\n  gap: 5px;\n}\n\n#todo input,\n#todo select,\n#todo textarea {\n  padding: 3px;\n  border-radius: 5px;\n  outline: none;\n  border: 1px solid #000;\n  font-size: 1rem;\n  accent-color: var(--bg-primary-color);\n  font-family: 'Poppins', sans-serif;\n}\n\n#todo button {\n  text-align: center;\n  width: 100%;\n  background-color: var(--bg-secondary-color);\n  margin-top: 10px;\n}\n\n/* ----------------- TODOS rendering ----------------- */\n\n.todos-list {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-around;\n  gap: 20px;\n}\n\n.todo-container {\n  display: flex;\n  flex-direction: column;\n  gap: 5px;\n  width: 100%;\n  padding: 10px;\n  border-radius: 10px;\n  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;\n}\n\n.todo-container input[type='checkbox'] {\n  accent-color: var(--bg-secondary-color);\n  appearance: none;\n  width: 20px;\n  height: 20px;\n  border: 1px solid var(--gray-color);\n  border-radius: 50%;\n  background-clip: content-box;\n  padding: 3px;\n}\n\n.todo-container input[type='checkbox']:checked {\n  background-color: var(--bg-secondary-color);\n}\n\n.todo-body {\n  display: flex;\n  flex-direction: column;\n}\n\n.todo-title {\n  font-weight: bolder;\n}\n\n.todo-description {\n  font-size: 0.8rem;\n}\n\n.todo-project-name {\n  width: 50%;\n  background: var(--blue-color);\n  color: var(--bg-primary-color);\n  border-radius: 10px;\n  padding: 5px;\n}\n\n.actions {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  padding: 10px;\n  border-radius: 10px;\n  background: var(--bg-secondary-color);\n  width: 100%;\n}\n\n.low {\n  color: #f7f75a;\n  text-decoration: wavy;\n}\n\n.medium {\n  color: #6781f5;\n}\n\n.high {\n  color: #f82929;\n}\n\n.danger {\n  color: #f72929;\n  cursor: pointer;\n}\n\n.completed {\n  text-decoration: line-through;\n  color: var(--gray-color);\n}\n\n.expired {\n  font-size: 0.8rem;\n  color: #f72929;\n}\n\n/* ----------------- FOOTER STYLES ------------------- */\n\nfooter {\n  background: var(--bg-primary-color);\n  padding: 10px;\n  text-align: center;\n  color: var(--white-color);\n}\n\nfooter a {\n  color: var(--white-color);\n  text-decoration: none;\n}\n\n@media (max-width: 700px) {\n  .menu {\n    min-width: 50vw;\n  }\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  --bg-primary-color: #13005a;\n  --bg-secondary-color: #03c988;\n  --white-color: #fff;\n  --gray-color: #838585;\n  --blue-color: #86c4f7;\n}\n\n* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  font-family: 'Poppins', sans-serif;\n}\n\n/* ----------------- HEADER STYLES ------------------- */\n\nheader {\n  display: flex;\n  align-items: center;\n  justify-content: flex-start;\n  gap: 100px;\n  color: var(--white-color);\n  background: var(--bg-primary-color);\n  padding: 10px;\n}\n\n.todo-icon {\n  font-size: 2rem;\n}\n\n.main-content {\n  display: flex;\n}\n\n/* ----------------- NAV STYLES ------------------- */\n\n.menu {\n  background: var(--bg-secondary-color);\n  padding: 10px;\n  min-height: 82vh;\n  min-width: 30vw;\n}\n\n.menu ul {\n  list-style: none;\n}\n\n.menu li {\n  margin: 10px;\n}\n\n.menu a,\n.menu button {\n  color: var(--bg-primary-color);\n  text-decoration: none;\n  font-size: 1.1rem;\n  border-radius: 5px;\n  padding: 10px;\n  display: block;\n  width: 100%;\n}\n\nhr {\n  border-bottom: 2px solid var(--gray-color);\n  outline: none;\n}\n\n.menu button {\n  background: var(--bg-secondary-color);\n  outline: none;\n  border: 0;\n  cursor: pointer;\n}\n\n.projects li {\n  display: flex;\n  align-items: center;\n  justify-content: start;\n}\n\n.projects .btn {\n  font-size: 1rem;\n  display: inline;\n  width: auto;\n  background: transparent;\n}\n\n.projects a {\n  font-size: 1rem;\n}\n\n.menu a:hover {\n  background: var(--white-color);\n}\n\n.project-modal {\n  display: none;\n  position: fixed;\n  z-index: 1;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  background: rgba(0, 0, 0, 0.4);\n}\n\n.project-modal-content {\n  background-color: var(--white-color);\n  margin: 15% auto;\n  padding: 20px;\n  border: 1px solid var(--white-color);\n  width: 50%;\n  border-radius: 10px;\n  color: var(--bg-primary-color);\n  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.7);\n}\n.project-close {\n  float: right;\n  font-size: 2rem;\n  font-weight: bold;\n  color: var(--bg-primary-color);\n}\n\n.project-close:hover,\n.project-close:focus {\n  cursor: pointer;\n  text-decoration: none;\n  color: var(--bg-secondary-color);\n}\n\n.projects-menu .add-project {\n  background: var(--blue-color);\n}\n.projects-menu .add-project:hover {\n  background: var(--white-color);\n}\n\n#project {\n  display: flex;\n  flex-direction: column;\n  padding: 10px 20px;\n  gap: 10px;\n}\n\n#project input {\n  padding: 5px;\n  border-radius: 5px;\n  outline: none;\n  border: 1px solid #000;\n  font-size: 1.2rem;\n  accent-color: var(--bg-primary-color);\n}\n/* ----------------- CONTENT STYLES ------------------- */\n\n.content {\n  padding: 10px;\n  width: 100%;\n}\n\n.content h1 {\n  margin-bottom: 20px;\n  color: var(--gray-color);\n}\n\n.content button {\n  color: var(--bg-primary-color);\n  background: transparent;\n  outline: none;\n  border: 0;\n  text-align: left;\n  cursor: pointer;\n  font-size: 1.2rem;\n  font-weight: bold;\n  padding: 10px;\n  border-radius: 5px;\n  margin-bottom: 10px;\n}\n\n.content button:hover {\n  background-color: var(--bg-secondary-color);\n}\n\n.todo-modal {\n  display: none;\n  position: fixed;\n  z-index: 1;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  background: rgba(0, 0, 0, 0.4);\n}\n\n.todo-modal-content {\n  background-color: var(--white-color);\n  margin: 7% auto;\n  padding: 10px;\n  border: 1px solid var(--white-color);\n  width: 50%;\n  border-radius: 10px;\n  color: var(--bg-primary-color);\n  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.7);\n}\n.close-todo {\n  float: right;\n  font-size: 2rem;\n  font-weight: bold;\n  color: var(--bg-primary-color);\n}\n\n.close-todo:hover,\n.close-todo:focus {\n  cursor: pointer;\n  text-decoration: none;\n  color: var(--bg-secondary-color);\n}\n\n#todo {\n  display: flex;\n  flex-direction: column;\n  padding: 5px 20px;\n  gap: 5px;\n}\n\n#todo input,\n#todo select,\n#todo textarea {\n  padding: 3px;\n  border-radius: 5px;\n  outline: none;\n  border: 1px solid #000;\n  font-size: 1rem;\n  accent-color: var(--bg-primary-color);\n  font-family: 'Poppins', sans-serif;\n}\n\n#todo button {\n  text-align: center;\n  width: 100%;\n  background-color: var(--bg-secondary-color);\n  margin-top: 10px;\n}\n\n/* ----------------- TODOS rendering ----------------- */\n\n.todos-list {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-around;\n  gap: 20px;\n}\n\n.todo-container {\n  display: flex;\n  flex-direction: column;\n  gap: 5px;\n  width: 100%;\n  padding: 10px;\n  border-radius: 10px;\n  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;\n}\n\n.todo-container input[type='checkbox'] {\n  accent-color: var(--bg-secondary-color);\n  appearance: none;\n  width: 20px;\n  height: 20px;\n  border: 1px solid var(--gray-color);\n  border-radius: 50%;\n  background-clip: content-box;\n  padding: 3px;\n}\n\n.todo-container input[type='checkbox']:checked {\n  background-color: var(--bg-secondary-color);\n}\n\n.todo-body {\n  display: flex;\n  flex-direction: column;\n}\n\n.todo-title {\n  font-weight: bolder;\n}\n\n.todo-description {\n  font-size: 0.8rem;\n}\n\n.todo-project-name {\n  width: 50%;\n  background: var(--blue-color);\n  color: var(--bg-primary-color);\n  border-radius: 10px;\n  padding: 5px;\n}\n\n.actions {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  padding: 10px;\n  border-radius: 10px;\n  background: var(--bg-secondary-color);\n  width: 100%;\n}\n\n.low {\n  color: #f7f75a;\n  text-decoration: wavy;\n}\n\n.medium {\n  color: #6781f5;\n}\n\n.high {\n  color: #f82929;\n}\n\n.danger {\n  color: #f72929;\n  cursor: pointer;\n}\n\n.completed {\n  text-decoration: line-through;\n  color: var(--gray-color);\n}\n\n.expired {\n  font-size: 0.8rem;\n  color: #f72929;\n}\n\n/* ------------------ FONTAWESOME ADDITION */\n.fa-pen-to-square:hover,\n.fa-trash:hover,\n.fa-delete-left:hover {\n  cursor: pointer;\n}\n\n/* ----------------- FOOTER STYLES ------------------- */\n\nfooter {\n  background: var(--bg-primary-color);\n  padding: 10px;\n  text-align: center;\n  color: var(--white-color);\n}\n\nfooter a {\n  color: var(--white-color);\n  text-decoration: none;\n}\n\n@media (max-width: 700px) {\n  .menu {\n    min-width: 50vw;\n  }\n}\n", "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA;EACE,2BAA2B;EAC3B,6BAA6B;EAC7B,mBAAmB;EACnB,qBAAqB;EACrB,qBAAqB;AACvB;;AAEA;EACE,UAAU;EACV,SAAS;EACT,sBAAsB;AACxB;;AAEA;EACE,kCAAkC;AACpC;;AAEA,wDAAwD;;AAExD;EACE,aAAa;EACb,mBAAmB;EACnB,2BAA2B;EAC3B,UAAU;EACV,yBAAyB;EACzB,mCAAmC;EACnC,aAAa;AACf;;AAEA;EACE,eAAe;AACjB;;AAEA;EACE,aAAa;AACf;;AAEA,qDAAqD;;AAErD;EACE,qCAAqC;EACrC,aAAa;EACb,gBAAgB;EAChB,eAAe;AACjB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,YAAY;AACd;;AAEA;;EAEE,8BAA8B;EAC9B,qBAAqB;EACrB,iBAAiB;EACjB,kBAAkB;EAClB,aAAa;EACb,cAAc;EACd,WAAW;AACb;;AAEA;EACE,0CAA0C;EAC1C,aAAa;AACf;;AAEA;EACE,qCAAqC;EACrC,aAAa;EACb,SAAS;EACT,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,sBAAsB;AACxB;;AAEA;EACE,eAAe;EACf,eAAe;EACf,WAAW;EACX,uBAAuB;AACzB;;AAEA;EACE,eAAe;AACjB;;AAEA;EACE,8BAA8B;AAChC;;AAEA;EACE,aAAa;EACb,eAAe;EACf,UAAU;EACV,OAAO;EACP,MAAM;EACN,WAAW;EACX,YAAY;EACZ,8BAA8B;AAChC;;AAEA;EACE,oCAAoC;EACpC,gBAAgB;EAChB,aAAa;EACb,oCAAoC;EACpC,UAAU;EACV,mBAAmB;EACnB,8BAA8B;EAC9B,gDAAgD;AAClD;AACA;EACE,YAAY;EACZ,eAAe;EACf,iBAAiB;EACjB,8BAA8B;AAChC;;AAEA;;EAEE,eAAe;EACf,qBAAqB;EACrB,gCAAgC;AAClC;;AAEA;EACE,6BAA6B;AAC/B;AACA;EACE,8BAA8B;AAChC;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,kBAAkB;EAClB,SAAS;AACX;;AAEA;EACE,YAAY;EACZ,kBAAkB;EAClB,aAAa;EACb,sBAAsB;EACtB,iBAAiB;EACjB,qCAAqC;AACvC;AACA,yDAAyD;;AAEzD;EACE,aAAa;EACb,WAAW;AACb;;AAEA;EACE,mBAAmB;EACnB,wBAAwB;AAC1B;;AAEA;EACE,8BAA8B;EAC9B,uBAAuB;EACvB,aAAa;EACb,SAAS;EACT,gBAAgB;EAChB,eAAe;EACf,iBAAiB;EACjB,iBAAiB;EACjB,aAAa;EACb,kBAAkB;EAClB,mBAAmB;AACrB;;AAEA;EACE,2CAA2C;AAC7C;;AAEA;EACE,aAAa;EACb,eAAe;EACf,UAAU;EACV,OAAO;EACP,MAAM;EACN,WAAW;EACX,YAAY;EACZ,8BAA8B;AAChC;;AAEA;EACE,oCAAoC;EACpC,eAAe;EACf,aAAa;EACb,oCAAoC;EACpC,UAAU;EACV,mBAAmB;EACnB,8BAA8B;EAC9B,gDAAgD;AAClD;AACA;EACE,YAAY;EACZ,eAAe;EACf,iBAAiB;EACjB,8BAA8B;AAChC;;AAEA;;EAEE,eAAe;EACf,qBAAqB;EACrB,gCAAgC;AAClC;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,iBAAiB;EACjB,QAAQ;AACV;;AAEA;;;EAGE,YAAY;EACZ,kBAAkB;EAClB,aAAa;EACb,sBAAsB;EACtB,eAAe;EACf,qCAAqC;EACrC,kCAAkC;AACpC;;AAEA;EACE,kBAAkB;EAClB,WAAW;EACX,2CAA2C;EAC3C,gBAAgB;AAClB;;AAEA,wDAAwD;;AAExD;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,6BAA6B;EAC7B,SAAS;AACX;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,QAAQ;EACR,WAAW;EACX,aAAa;EACb,mBAAmB;EACnB,4CAA4C;AAC9C;;AAEA;EACE,uCAAuC;EACvC,gBAAgB;EAChB,WAAW;EACX,YAAY;EACZ,mCAAmC;EACnC,kBAAkB;EAClB,4BAA4B;EAC5B,YAAY;AACd;;AAEA;EACE,2CAA2C;AAC7C;;AAEA;EACE,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,UAAU;EACV,6BAA6B;EAC7B,8BAA8B;EAC9B,mBAAmB;EACnB,YAAY;AACd;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,aAAa;EACb,mBAAmB;EACnB,qCAAqC;EACrC,WAAW;AACb;;AAEA;EACE,cAAc;EACd,qBAAqB;AACvB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,cAAc;EACd,eAAe;AACjB;;AAEA;EACE,6BAA6B;EAC7B,wBAAwB;AAC1B;;AAEA;EACE,iBAAiB;EACjB,cAAc;AAChB;;AAEA,4CAA4C;AAC5C;;;EAGE,eAAe;AACjB;;AAEA,wDAAwD;;AAExD;EACE,mCAAmC;EACnC,aAAa;EACb,kBAAkB;EAClB,yBAAyB;AAC3B;;AAEA;EACE,yBAAyB;EACzB,qBAAqB;AACvB;;AAEA;EACE;IACE,eAAe;EACjB;AACF","sourcesContent":[":root {\n  --bg-primary-color: #13005a;\n  --bg-secondary-color: #03c988;\n  --white-color: #fff;\n  --gray-color: #838585;\n  --blue-color: #86c4f7;\n}\n\n* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  font-family: 'Poppins', sans-serif;\n}\n\n/* ----------------- HEADER STYLES ------------------- */\n\nheader {\n  display: flex;\n  align-items: center;\n  justify-content: flex-start;\n  gap: 100px;\n  color: var(--white-color);\n  background: var(--bg-primary-color);\n  padding: 10px;\n}\n\n.todo-icon {\n  font-size: 2rem;\n}\n\n.main-content {\n  display: flex;\n}\n\n/* ----------------- NAV STYLES ------------------- */\n\n.menu {\n  background: var(--bg-secondary-color);\n  padding: 10px;\n  min-height: 82vh;\n  min-width: 30vw;\n}\n\n.menu ul {\n  list-style: none;\n}\n\n.menu li {\n  margin: 10px;\n}\n\n.menu a,\n.menu button {\n  color: var(--bg-primary-color);\n  text-decoration: none;\n  font-size: 1.1rem;\n  border-radius: 5px;\n  padding: 10px;\n  display: block;\n  width: 100%;\n}\n\nhr {\n  border-bottom: 2px solid var(--gray-color);\n  outline: none;\n}\n\n.menu button {\n  background: var(--bg-secondary-color);\n  outline: none;\n  border: 0;\n  cursor: pointer;\n}\n\n.projects li {\n  display: flex;\n  align-items: center;\n  justify-content: start;\n}\n\n.projects .btn {\n  font-size: 1rem;\n  display: inline;\n  width: auto;\n  background: transparent;\n}\n\n.projects a {\n  font-size: 1rem;\n}\n\n.menu a:hover {\n  background: var(--white-color);\n}\n\n.project-modal {\n  display: none;\n  position: fixed;\n  z-index: 1;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  background: rgba(0, 0, 0, 0.4);\n}\n\n.project-modal-content {\n  background-color: var(--white-color);\n  margin: 15% auto;\n  padding: 20px;\n  border: 1px solid var(--white-color);\n  width: 50%;\n  border-radius: 10px;\n  color: var(--bg-primary-color);\n  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.7);\n}\n.project-close {\n  float: right;\n  font-size: 2rem;\n  font-weight: bold;\n  color: var(--bg-primary-color);\n}\n\n.project-close:hover,\n.project-close:focus {\n  cursor: pointer;\n  text-decoration: none;\n  color: var(--bg-secondary-color);\n}\n\n.projects-menu .add-project {\n  background: var(--blue-color);\n}\n.projects-menu .add-project:hover {\n  background: var(--white-color);\n}\n\n#project {\n  display: flex;\n  flex-direction: column;\n  padding: 10px 20px;\n  gap: 10px;\n}\n\n#project input {\n  padding: 5px;\n  border-radius: 5px;\n  outline: none;\n  border: 1px solid #000;\n  font-size: 1.2rem;\n  accent-color: var(--bg-primary-color);\n}\n/* ----------------- CONTENT STYLES ------------------- */\n\n.content {\n  padding: 10px;\n  width: 100%;\n}\n\n.content h1 {\n  margin-bottom: 20px;\n  color: var(--gray-color);\n}\n\n.content button {\n  color: var(--bg-primary-color);\n  background: transparent;\n  outline: none;\n  border: 0;\n  text-align: left;\n  cursor: pointer;\n  font-size: 1.2rem;\n  font-weight: bold;\n  padding: 10px;\n  border-radius: 5px;\n  margin-bottom: 10px;\n}\n\n.content button:hover {\n  background-color: var(--bg-secondary-color);\n}\n\n.todo-modal {\n  display: none;\n  position: fixed;\n  z-index: 1;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  background: rgba(0, 0, 0, 0.4);\n}\n\n.todo-modal-content {\n  background-color: var(--white-color);\n  margin: 7% auto;\n  padding: 10px;\n  border: 1px solid var(--white-color);\n  width: 50%;\n  border-radius: 10px;\n  color: var(--bg-primary-color);\n  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.7);\n}\n.close-todo {\n  float: right;\n  font-size: 2rem;\n  font-weight: bold;\n  color: var(--bg-primary-color);\n}\n\n.close-todo:hover,\n.close-todo:focus {\n  cursor: pointer;\n  text-decoration: none;\n  color: var(--bg-secondary-color);\n}\n\n#todo {\n  display: flex;\n  flex-direction: column;\n  padding: 5px 20px;\n  gap: 5px;\n}\n\n#todo input,\n#todo select,\n#todo textarea {\n  padding: 3px;\n  border-radius: 5px;\n  outline: none;\n  border: 1px solid #000;\n  font-size: 1rem;\n  accent-color: var(--bg-primary-color);\n  font-family: 'Poppins', sans-serif;\n}\n\n#todo button {\n  text-align: center;\n  width: 100%;\n  background-color: var(--bg-secondary-color);\n  margin-top: 10px;\n}\n\n/* ----------------- TODOS rendering ----------------- */\n\n.todos-list {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-around;\n  gap: 20px;\n}\n\n.todo-container {\n  display: flex;\n  flex-direction: column;\n  gap: 5px;\n  width: 100%;\n  padding: 10px;\n  border-radius: 10px;\n  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;\n}\n\n.todo-container input[type='checkbox'] {\n  accent-color: var(--bg-secondary-color);\n  appearance: none;\n  width: 20px;\n  height: 20px;\n  border: 1px solid var(--gray-color);\n  border-radius: 50%;\n  background-clip: content-box;\n  padding: 3px;\n}\n\n.todo-container input[type='checkbox']:checked {\n  background-color: var(--bg-secondary-color);\n}\n\n.todo-body {\n  display: flex;\n  flex-direction: column;\n}\n\n.todo-title {\n  font-weight: bolder;\n}\n\n.todo-description {\n  font-size: 0.8rem;\n}\n\n.todo-project-name {\n  width: 50%;\n  background: var(--blue-color);\n  color: var(--bg-primary-color);\n  border-radius: 10px;\n  padding: 5px;\n}\n\n.actions {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  padding: 10px;\n  border-radius: 10px;\n  background: var(--bg-secondary-color);\n  width: 100%;\n}\n\n.low {\n  color: #f7f75a;\n  text-decoration: wavy;\n}\n\n.medium {\n  color: #6781f5;\n}\n\n.high {\n  color: #f82929;\n}\n\n.danger {\n  color: #f72929;\n  cursor: pointer;\n}\n\n.completed {\n  text-decoration: line-through;\n  color: var(--gray-color);\n}\n\n.expired {\n  font-size: 0.8rem;\n  color: #f72929;\n}\n\n/* ------------------ FONTAWESOME ADDITION */\n.fa-pen-to-square:hover,\n.fa-trash:hover,\n.fa-delete-left:hover {\n  cursor: pointer;\n}\n\n/* ----------------- FOOTER STYLES ------------------- */\n\nfooter {\n  background: var(--bg-primary-color);\n  padding: 10px;\n  text-align: center;\n  color: var(--white-color);\n}\n\nfooter a {\n  color: var(--white-color);\n  text-decoration: none;\n}\n\n@media (max-width: 700px) {\n  .menu {\n    min-width: 50vw;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -2344,6 +2344,213 @@ function isDate(value) {
 
 /***/ }),
 
+/***/ "./node_modules/date-fns/esm/isSameDay/index.js":
+/*!******************************************************!*\
+  !*** ./node_modules/date-fns/esm/isSameDay/index.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ isSameDay)
+/* harmony export */ });
+/* harmony import */ var _startOfDay_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../startOfDay/index.js */ "./node_modules/date-fns/esm/startOfDay/index.js");
+/* harmony import */ var _lib_requiredArgs_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_lib/requiredArgs/index.js */ "./node_modules/date-fns/esm/_lib/requiredArgs/index.js");
+
+
+/**
+ * @name isSameDay
+ * @category Day Helpers
+ * @summary Are the given dates in the same day (and year and month)?
+ *
+ * @description
+ * Are the given dates in the same day (and year and month)?
+ *
+ * @param {Date|Number} dateLeft - the first date to check
+ * @param {Date|Number} dateRight - the second date to check
+ * @returns {Boolean} the dates are in the same day (and year and month)
+ * @throws {TypeError} 2 arguments required
+ *
+ * @example
+ * // Are 4 September 06:00:00 and 4 September 18:00:00 in the same day?
+ * const result = isSameDay(new Date(2014, 8, 4, 6, 0), new Date(2014, 8, 4, 18, 0))
+ * //=> true
+ *
+ * @example
+ * // Are 4 September and 4 October in the same day?
+ * const result = isSameDay(new Date(2014, 8, 4), new Date(2014, 9, 4))
+ * //=> false
+ *
+ * @example
+ * // Are 4 September, 2014 and 4 September, 2015 in the same day?
+ * const result = isSameDay(new Date(2014, 8, 4), new Date(2015, 8, 4))
+ * //=> false
+ */
+
+function isSameDay(dirtyDateLeft, dirtyDateRight) {
+  (0,_lib_requiredArgs_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(2, arguments);
+  var dateLeftStartOfDay = (0,_startOfDay_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(dirtyDateLeft);
+  var dateRightStartOfDay = (0,_startOfDay_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(dirtyDateRight);
+  return dateLeftStartOfDay.getTime() === dateRightStartOfDay.getTime();
+}
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/isSameWeek/index.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/date-fns/esm/isSameWeek/index.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ isSameWeek)
+/* harmony export */ });
+/* harmony import */ var _startOfWeek_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../startOfWeek/index.js */ "./node_modules/date-fns/esm/startOfWeek/index.js");
+/* harmony import */ var _lib_requiredArgs_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_lib/requiredArgs/index.js */ "./node_modules/date-fns/esm/_lib/requiredArgs/index.js");
+
+
+
+/**
+ * @name isSameWeek
+ * @category Week Helpers
+ * @summary Are the given dates in the same week (and month and year)?
+ *
+ * @description
+ * Are the given dates in the same week (and month and year)?
+ *
+ * @param {Date|Number} dateLeft - the first date to check
+ * @param {Date|Number} dateRight - the second date to check
+ * @param {Object} [options] - an object with options.
+ * @param {Locale} [options.locale=defaultLocale] - the locale object. See [Locale]{@link https://date-fns.org/docs/Locale}
+ * @param {0|1|2|3|4|5|6} [options.weekStartsOn=0] - the index of the first day of the week (0 - Sunday)
+ * @returns {Boolean} the dates are in the same week (and month and year)
+ * @throws {TypeError} 2 arguments required
+ * @throws {RangeError} `options.weekStartsOn` must be between 0 and 6
+ *
+ * @example
+ * // Are 31 August 2014 and 4 September 2014 in the same week?
+ * const result = isSameWeek(new Date(2014, 7, 31), new Date(2014, 8, 4))
+ * //=> true
+ *
+ * @example
+ * // If week starts with Monday,
+ * // are 31 August 2014 and 4 September 2014 in the same week?
+ * const result = isSameWeek(new Date(2014, 7, 31), new Date(2014, 8, 4), {
+ *   weekStartsOn: 1
+ * })
+ * //=> false
+ *
+ * @example
+ * // Are 1 January 2014 and 1 January 2015 in the same week?
+ * const result = isSameWeek(new Date(2014, 0, 1), new Date(2015, 0, 1))
+ * //=> false
+ */
+function isSameWeek(dirtyDateLeft, dirtyDateRight, options) {
+  (0,_lib_requiredArgs_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(2, arguments);
+  var dateLeftStartOfWeek = (0,_startOfWeek_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(dirtyDateLeft, options);
+  var dateRightStartOfWeek = (0,_startOfWeek_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(dirtyDateRight, options);
+  return dateLeftStartOfWeek.getTime() === dateRightStartOfWeek.getTime();
+}
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/isThisWeek/index.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/date-fns/esm/isThisWeek/index.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ isThisWeek)
+/* harmony export */ });
+/* harmony import */ var _isSameWeek_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../isSameWeek/index.js */ "./node_modules/date-fns/esm/isSameWeek/index.js");
+/* harmony import */ var _lib_requiredArgs_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_lib/requiredArgs/index.js */ "./node_modules/date-fns/esm/_lib/requiredArgs/index.js");
+
+
+
+/**
+ * @name isThisWeek
+ * @category Week Helpers
+ * @summary Is the given date in the same week as the current date?
+ * @pure false
+ *
+ * @description
+ * Is the given date in the same week as the current date?
+ *
+ * > ⚠️ Please note that this function is not present in the FP submodule as
+ * > it uses `Date.now()` internally hence impure and can't be safely curried.
+ *
+ * @param {Date|Number} date - the date to check
+ * @param {Object} [options] - the object with options
+ * @param {Locale} [options.locale=defaultLocale] - the locale object. See [Locale]{@link https://date-fns.org/docs/Locale}
+ * @param {0|1|2|3|4|5|6} [options.weekStartsOn=0] - the index of the first day of the week (0 - Sunday)
+ * @returns {Boolean} the date is in this week
+ * @throws {TypeError} 1 argument required
+ * @throws {RangeError} `options.weekStartsOn` must be between 0 and 6
+ *
+ * @example
+ * // If today is 25 September 2014, is 21 September 2014 in this week?
+ * const result = isThisWeek(new Date(2014, 8, 21))
+ * //=> true
+ *
+ * @example
+ * // If today is 25 September 2014 and week starts with Monday
+ * // is 21 September 2014 in this week?
+ * const result = isThisWeek(new Date(2014, 8, 21), { weekStartsOn: 1 })
+ * //=> false
+ */
+function isThisWeek(dirtyDate, options) {
+  (0,_lib_requiredArgs_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(1, arguments);
+  return (0,_isSameWeek_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(dirtyDate, Date.now(), options);
+}
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/isToday/index.js":
+/*!****************************************************!*\
+  !*** ./node_modules/date-fns/esm/isToday/index.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ isToday)
+/* harmony export */ });
+/* harmony import */ var _isSameDay_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../isSameDay/index.js */ "./node_modules/date-fns/esm/isSameDay/index.js");
+/* harmony import */ var _lib_requiredArgs_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_lib/requiredArgs/index.js */ "./node_modules/date-fns/esm/_lib/requiredArgs/index.js");
+
+
+/**
+ * @name isToday
+ * @category Day Helpers
+ * @summary Is the given date today?
+ * @pure false
+ *
+ * @description
+ * Is the given date today?
+ *
+ * > ⚠️ Please note that this function is not present in the FP submodule as
+ * > it uses `Date.now()` internally hence impure and can't be safely curried.
+ *
+ * @param {Date|Number} date - the date to check
+ * @returns {Boolean} the date is today
+ * @throws {TypeError} 1 argument required
+ *
+ * @example
+ * // If today is 6 October 2014, is 6 October 14:00:00 today?
+ * const result = isToday(new Date(2014, 9, 6, 14, 0))
+ * //=> true
+ */
+
+function isToday(dirtyDate) {
+  (0,_lib_requiredArgs_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(1, arguments);
+  return (0,_isSameDay_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(dirtyDate, Date.now());
+}
+
+/***/ }),
+
 /***/ "./node_modules/date-fns/esm/isValid/index.js":
 /*!****************************************************!*\
   !*** ./node_modules/date-fns/esm/isValid/index.js ***!
@@ -3050,6 +3257,115 @@ var locale = {
 
 /***/ }),
 
+/***/ "./node_modules/date-fns/esm/startOfDay/index.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/date-fns/esm/startOfDay/index.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ startOfDay)
+/* harmony export */ });
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+/* harmony import */ var _lib_requiredArgs_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_lib/requiredArgs/index.js */ "./node_modules/date-fns/esm/_lib/requiredArgs/index.js");
+
+
+/**
+ * @name startOfDay
+ * @category Day Helpers
+ * @summary Return the start of a day for the given date.
+ *
+ * @description
+ * Return the start of a day for the given date.
+ * The result will be in the local timezone.
+ *
+ * @param {Date|Number} date - the original date
+ * @returns {Date} the start of a day
+ * @throws {TypeError} 1 argument required
+ *
+ * @example
+ * // The start of a day for 2 September 2014 11:55:00:
+ * const result = startOfDay(new Date(2014, 8, 2, 11, 55, 0))
+ * //=> Tue Sep 02 2014 00:00:00
+ */
+
+function startOfDay(dirtyDate) {
+  (0,_lib_requiredArgs_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(1, arguments);
+  var date = (0,_toDate_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(dirtyDate);
+  date.setHours(0, 0, 0, 0);
+  return date;
+}
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/startOfWeek/index.js":
+/*!********************************************************!*\
+  !*** ./node_modules/date-fns/esm/startOfWeek/index.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ startOfWeek)
+/* harmony export */ });
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+/* harmony import */ var _lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../_lib/toInteger/index.js */ "./node_modules/date-fns/esm/_lib/toInteger/index.js");
+/* harmony import */ var _lib_requiredArgs_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_lib/requiredArgs/index.js */ "./node_modules/date-fns/esm/_lib/requiredArgs/index.js");
+/* harmony import */ var _lib_defaultOptions_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../_lib/defaultOptions/index.js */ "./node_modules/date-fns/esm/_lib/defaultOptions/index.js");
+
+
+
+
+/**
+ * @name startOfWeek
+ * @category Week Helpers
+ * @summary Return the start of a week for the given date.
+ *
+ * @description
+ * Return the start of a week for the given date.
+ * The result will be in the local timezone.
+ *
+ * @param {Date|Number} date - the original date
+ * @param {Object} [options] - an object with options.
+ * @param {Locale} [options.locale=defaultLocale] - the locale object. See [Locale]{@link https://date-fns.org/docs/Locale}
+ * @param {0|1|2|3|4|5|6} [options.weekStartsOn=0] - the index of the first day of the week (0 - Sunday)
+ * @returns {Date} the start of a week
+ * @throws {TypeError} 1 argument required
+ * @throws {RangeError} `options.weekStartsOn` must be between 0 and 6
+ *
+ * @example
+ * // The start of a week for 2 September 2014 11:55:00:
+ * const result = startOfWeek(new Date(2014, 8, 2, 11, 55, 0))
+ * //=> Sun Aug 31 2014 00:00:00
+ *
+ * @example
+ * // If the week starts on Monday, the start of the week for 2 September 2014 11:55:00:
+ * const result = startOfWeek(new Date(2014, 8, 2, 11, 55, 0), { weekStartsOn: 1 })
+ * //=> Mon Sep 01 2014 00:00:00
+ */
+
+function startOfWeek(dirtyDate, options) {
+  var _ref, _ref2, _ref3, _options$weekStartsOn, _options$locale, _options$locale$optio, _defaultOptions$local, _defaultOptions$local2;
+
+  (0,_lib_requiredArgs_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(1, arguments);
+  var defaultOptions = (0,_lib_defaultOptions_index_js__WEBPACK_IMPORTED_MODULE_1__.getDefaultOptions)();
+  var weekStartsOn = (0,_lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_2__["default"])((_ref = (_ref2 = (_ref3 = (_options$weekStartsOn = options === null || options === void 0 ? void 0 : options.weekStartsOn) !== null && _options$weekStartsOn !== void 0 ? _options$weekStartsOn : options === null || options === void 0 ? void 0 : (_options$locale = options.locale) === null || _options$locale === void 0 ? void 0 : (_options$locale$optio = _options$locale.options) === null || _options$locale$optio === void 0 ? void 0 : _options$locale$optio.weekStartsOn) !== null && _ref3 !== void 0 ? _ref3 : defaultOptions.weekStartsOn) !== null && _ref2 !== void 0 ? _ref2 : (_defaultOptions$local = defaultOptions.locale) === null || _defaultOptions$local === void 0 ? void 0 : (_defaultOptions$local2 = _defaultOptions$local.options) === null || _defaultOptions$local2 === void 0 ? void 0 : _defaultOptions$local2.weekStartsOn) !== null && _ref !== void 0 ? _ref : 0); // Test if weekStartsOn is between 0 and 6 _and_ is not NaN
+
+  if (!(weekStartsOn >= 0 && weekStartsOn <= 6)) {
+    throw new RangeError('weekStartsOn must be between 0 and 6 inclusively');
+  }
+
+  var date = (0,_toDate_index_js__WEBPACK_IMPORTED_MODULE_3__["default"])(dirtyDate);
+  var day = date.getDay();
+  var diff = (day < weekStartsOn ? 7 : 0) + day - weekStartsOn;
+  date.setDate(date.getDate() - diff);
+  date.setHours(0, 0, 0, 0);
+  return date;
+}
+
+/***/ }),
+
 /***/ "./node_modules/date-fns/esm/subMilliseconds/index.js":
 /*!************************************************************!*\
   !*** ./node_modules/date-fns/esm/subMilliseconds/index.js ***!
@@ -3521,494 +3837,6 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ "./src/modules/program-UI.js":
-/*!***********************************!*\
-  !*** ./src/modules/program-UI.js ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! date-fns */ "./node_modules/date-fns/esm/isBefore/index.js");
-/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! date-fns */ "./node_modules/date-fns/esm/endOfYesterday/index.js");
-/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! date-fns */ "./node_modules/date-fns/esm/format/index.js");
-/* harmony import */ var _program_flow__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./program-flow */ "./src/modules/program-flow.js");
-
-
-
-const programUI = ((doc) => {
-  // modals elements
-  const addProjectBtn = doc.querySelector('.add-project');
-  const projectModal = doc.querySelector('.project-modal');
-  const addTodoBtn = doc.querySelector('.add-todo');
-  const todoModal = doc.querySelector('.todo-modal');
-  const todoCloseBtn = doc.querySelector('.close-todo');
-  const projectCloseBtn = doc.querySelector('.project-close');
-  const projectForm = doc.querySelector('#project');
-  const todoForm = doc.querySelector('#todo');
-
-  // todoForm Form Elements
-  const todoButton = todoForm.querySelector('button');
-  const todoHeader = todoForm.querySelector('h2');
-  const titleInput = todoForm.querySelector('#todo-title');
-  const dueDateInput = todoForm.querySelector('#due-date');
-  const descriptionInput = todoForm.querySelector('#description');
-  const priorityInput = todoForm.querySelector('#priority');
-
-  // addProject Form Elements
-  const projectFormHeader = projectForm.querySelector('h2');
-  const projectButton = projectForm.querySelector('button');
-  const projectNameInput = projectForm.querySelector('input');
-
-  let currentProjectId = '';
-  let currentTodoId = '';
-
-  // Load all projects and render
-  window.addEventListener('load', () => {
-    renderAllProjects();
-    renderTodosForSpecificProject(currentProjectId);
-  });
-
-  // add new project click event
-  addProjectBtn.addEventListener('click', () => {
-    enterNewProjectMode();
-    projectModal.style.display = 'block';
-  });
-
-  // close model add or edit project
-  projectCloseBtn.addEventListener('click', hideModalAndResetProjectForm);
-
-  // add new todo click event
-  addTodoBtn.addEventListener('click', () => {
-    enterNewTodoMode();
-    todoModal.style.display = 'block';
-  });
-
-  // close moodal add or edit todo
-  todoCloseBtn.addEventListener('click', hideModalAndReseTodoForm);
-
-  // handler for add or edit project form submition
-  projectForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    if (projectButton.textContent.includes('Add')) {
-      if (!projectNameInput.value) {
-        alert('Please enter a name for the project');
-        return;
-      }
-      _program_flow__WEBPACK_IMPORTED_MODULE_0__["default"].addNewProject(projectNameInput.value);
-    } else {
-      _program_flow__WEBPACK_IMPORTED_MODULE_0__["default"].updateProject(projectNameInput.value, currentProjectId);
-    }
-    hideModalAndResetProjectForm();
-    renderAllProjects();
-  });
-
-  // change elements for new project form
-  function enterNewProjectMode() {
-    projectFormHeader.textContent = 'Add New Project';
-    projectNameInput.value = '';
-    projectButton.innerHTML =
-      '<i class="fa-solid fa-folder-plus"></i> Add Project';
-  }
-
-  // change elements for edit project form
-  function enterEditProjectMode(id) {
-    projectFormHeader.textContent = 'Edit Project Form';
-    projectButton.innerHTML =
-      '<i class="fa-solid fa-square-pen"></i> Edit Project';
-    projectNameInput.value = _program_flow__WEBPACK_IMPORTED_MODULE_0__["default"].getProjectName(id);
-  }
-
-  // change elements for new todo form
-  function enterNewTodoMode() {
-    todoHeader.textContent = 'Add Todo Form';
-    todoButton.innerHTML = '<i class="fa-solid fa-square-plus"></i> Add Todo';
-    titleInput.value = '';
-    dueDateInput.valueAsDate = new Date();
-    descriptionInput.value = '';
-    priorityInput.value = 'low';
-  }
-
-  // change elements for edit todo form
-  function enterEditTodoMode(todoId, projectId) {
-    currentTodoId = todoId;
-    currentProjectId = projectId;
-
-    const todo = _program_flow__WEBPACK_IMPORTED_MODULE_0__["default"].getTodo(todoId, projectId);
-
-    todoHeader.textContent = 'Edit Todo Form';
-    todoButton.innerHTML =
-      '<i class="fa-solid fa-pen-to-square"></i> Edit Todo';
-    titleInput.value = todo.title;
-    dueDateInput.valueAsDate = new Date(todo.dueDate);
-    descriptionInput.value = todo.description;
-    priorityInput.value = todo.priority;
-  }
-
-  // handler for add or edit todo submition
-  todoForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const projectId = currentProjectId;
-    const todoId = currentTodoId;
-
-    if (todoButton.textContent.includes('Add')) {
-      // check if dueDate is in the past
-      if ((0,date_fns__WEBPACK_IMPORTED_MODULE_1__["default"])(new Date(dueDateInput.value), (0,date_fns__WEBPACK_IMPORTED_MODULE_2__["default"])())) {
-        alert('please choose present or a future date!');
-        return;
-      }
-      _program_flow__WEBPACK_IMPORTED_MODULE_0__["default"].addNewTodo(
-        titleInput.value,
-        new Date(dueDateInput.value),
-        descriptionInput.value,
-        priorityInput.value,
-        projectId
-      );
-    } else {
-      _program_flow__WEBPACK_IMPORTED_MODULE_0__["default"].updateTodo(
-        titleInput.value,
-        new Date(dueDateInput.value),
-        descriptionInput.value,
-        priorityInput.value,
-        projectId,
-        todoId
-      );
-    }
-    hideModalAndReseTodoForm();
-    renderTodosForSpecificProject(projectId);
-  });
-
-  // hide modal and reset project form when it closed
-  function hideModalAndResetProjectForm() {
-    projectModal.style.display = 'none';
-    projectForm.reset();
-  }
-
-  // hide modal and reset todo form when it closed
-  function hideModalAndReseTodoForm() {
-    todoModal.style.display = 'none';
-    todoForm.reset();
-  }
-
-  // render all projects form local storage by building a list
-  function renderAllProjects() {
-    const projectUL = doc.querySelector('.projects');
-    projectUL.innerHTML = '';
-    const projects = _program_flow__WEBPACK_IMPORTED_MODULE_0__["default"].loadProjects();
-    currentProjectId = projects[0].id;
-
-    projects.forEach((project) => {
-      const projectLI = doc.createElement('li');
-      const anchor = doc.createElement('a');
-      anchor.href = '#';
-      anchor.setAttribute('data-projectid', project.id);
-      anchor.addEventListener(
-        'click',
-        renderTodosForSpecificProject.bind(anchor, project.id)
-      );
-      anchor.innerHTML = `<i class="fa-solid fa-list-check"></i>&nbsp;${project.name}`;
-      projectLI.appendChild(anchor);
-      if (project.name !== 'Demo Project') {
-        const deleteProjectBtn = doc.createElement('button');
-        deleteProjectBtn.innerHTML = `<i data-projectid="${project.id}" class="fa-solid fa-delete-left"></i>`;
-        deleteProjectBtn.classList.add('btn');
-        deleteProjectBtn.addEventListener('click', (e) => {
-          const id = e.target.getAttribute('data-projectid');
-          _program_flow__WEBPACK_IMPORTED_MODULE_0__["default"].deleteProject(id);
-          renderAllProjects();
-        });
-        projectLI.appendChild(deleteProjectBtn);
-
-        const editProjectBtn = doc.createElement('button');
-        editProjectBtn.classList.add('btn');
-        editProjectBtn.innerHTML = `<i data-projectid="${project.id}" class="fa-solid fa-pen-to-square"></i>`;
-        editProjectBtn.addEventListener('click', (e) => {
-          const id = e.target.getAttribute('data-projectid');
-          enterEditProjectMode(id);
-          projectModal.style.display = 'block';
-        });
-        projectLI.appendChild(editProjectBtn);
-      }
-      projectUL.appendChild(projectLI);
-    });
-  }
-
-  // changes the header for project name and renders project's todos
-  function renderTodosForSpecificProject(projectId) {
-    const projectName = doc.querySelector('.project-name');
-    currentProjectId = projectId;
-    projectName.textContent = _program_flow__WEBPACK_IMPORTED_MODULE_0__["default"].getProjectName(currentProjectId);
-    const todos = _program_flow__WEBPACK_IMPORTED_MODULE_0__["default"].getProjectTodos(currentProjectId);
-    renderTodos(todos);
-  }
-
-  // render todos and add event for edit and delete todo and marking as complete
-  function renderTodos(todos) {
-    const todosList = doc.querySelector('.todos-list');
-    todosList.innerHTML = '';
-    todos.forEach((todo) => {
-      const projectId = _program_flow__WEBPACK_IMPORTED_MODULE_0__["default"].getProjectIdForTodo(todo.id);
-
-      const container = doc.createElement('div');
-      container.classList.add('todo-container');
-      todosList.appendChild(container);
-
-      const todoBody = doc.createElement('div');
-      todoBody.classList.add('todo-body');
-      container.appendChild(todoBody);
-
-      const completed = renderCheckbox(todo.completed);
-      completed.addEventListener(
-        'click',
-        toggleTodoStatus.bind(completed, todo.id, projectId)
-      );
-      todoBody.appendChild(completed);
-      if (todo.completed) todoBody.classList.add('completed');
-
-      const titlePara = doc.createElement('p');
-      titlePara.classList.add('todo-title');
-      titlePara.textContent = todo.title;
-      todoBody.appendChild(titlePara);
-
-      const descriptionPara = doc.createElement('p');
-      descriptionPara.classList.add('todo-description');
-      descriptionPara.textContent = todo.description;
-      todoBody.appendChild(descriptionPara);
-
-      const dueDatePara = doc.createElement('div');
-      dueDatePara.classList.add('todo-duedate');
-      dueDatePara.textContent = (0,date_fns__WEBPACK_IMPORTED_MODULE_3__["default"])(new Date(todo.dueDate), 'dd-MM-yyyy');
-      todoBody.appendChild(dueDatePara);
-      if ((0,date_fns__WEBPACK_IMPORTED_MODULE_1__["default"])(new Date(todo.dueDate), (0,date_fns__WEBPACK_IMPORTED_MODULE_2__["default"])())) {
-        dueDatePara.classList.add('expired');
-        dueDatePara.textContent += ' Expired';
-      }
-
-      const projectNamePara = doc.createElement('p');
-      projectNamePara.classList.add('todo-project-name');
-      projectNamePara.textContent = _program_flow__WEBPACK_IMPORTED_MODULE_0__["default"].getProjectName(projectId);
-      todoBody.appendChild(projectNamePara);
-
-      const actions = doc.createElement('div');
-      actions.classList.add('actions');
-      container.appendChild(actions);
-
-      const priorityFlag = doc.createElement('i');
-      priorityFlag.classList.add('fa-solid', 'fa-flag');
-      priorityFlag.classList.add(todo.priority);
-      priorityFlag.title = todo.priority;
-      actions.appendChild(priorityFlag);
-
-      const editTodoFlag = doc.createElement('i');
-      editTodoFlag.classList.add('fa-solid', 'fa-pen-to-square');
-      editTodoFlag.addEventListener('click', () => {
-        enterEditTodoMode(todo.id, projectId);
-        todoModal.style.display = 'block';
-      });
-      actions.appendChild(editTodoFlag);
-
-      const deleteTodoFlag = doc.createElement('i');
-      deleteTodoFlag.classList.add('fa-solid', 'fa-trash', 'danger');
-      deleteTodoFlag.addEventListener(
-        'click',
-        deleteTodo.bind(this, todo.id, projectId)
-      );
-      actions.appendChild(deleteTodoFlag);
-
-      todosList.appendChild(container);
-    });
-  }
-
-  // renders the checkbox for todo completed or not
-  function renderCheckbox(status) {
-    const checkbox = doc.createElement('input');
-    checkbox.type = 'checkbox';
-    if (status) {
-      checkbox.checked = true;
-    }
-    return checkbox;
-  }
-
-  // change status of todo as completed or not
-  function toggleTodoStatus(todoId, projectId) {
-    _program_flow__WEBPACK_IMPORTED_MODULE_0__["default"].completeTodo(todoId, projectId);
-    this.parentElement.classList.toggle('completed');
-  }
-
-  // delete todo from localstorage and render all todos again
-  function deleteTodo(todoId, projectId) {
-    _program_flow__WEBPACK_IMPORTED_MODULE_0__["default"].deleteTodo(todoId, projectId);
-    renderTodosForSpecificProject(projectId);
-  }
-})(document);
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (programUI);
-
-
-/***/ }),
-
-/***/ "./src/modules/program-flow.js":
-/*!*************************************!*\
-  !*** ./src/modules/program-flow.js ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _project__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./project */ "./src/modules/project.js");
-/* harmony import */ var _projects_manager__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./projects-manager */ "./src/modules/projects-manager.js");
-/* harmony import */ var _todo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./todo */ "./src/modules/todo.js");
-
-
-
-
-const programFlow = (() => {
-  const _saveToLocalStorage = () => {
-    localStorage.setItem('projects', JSON.stringify(_projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].projects));
-  };
-
-  const _getProjectsFromLocalStorage = () => {
-    _projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].projects = JSON.parse(localStorage.getItem('projects'));
-  };
-
-  const _findProjectIndex = (projectId) => {
-    _getProjectsFromLocalStorage();
-    return _projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].projects.findIndex(
-      (project) => project.id === projectId
-    );
-  };
-
-  const _findTodoIndex = (projectIndex, todoId) => {
-    _getProjectsFromLocalStorage();
-    return _projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].projects[projectIndex].todos.findIndex(
-      (todo) => todo.id === todoId
-    );
-  };
-
-  const loadProjects = () => {
-    let localProjects = JSON.parse(localStorage.getItem('projects'));
-    if (!localProjects) {
-      const demoProject = new _project__WEBPACK_IMPORTED_MODULE_0__["default"]('Demo Project');
-      _projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].projects.push(demoProject);
-      _saveToLocalStorage();
-      localProjects = _projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].projects;
-    } else {
-      _projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].projects = localProjects;
-    }
-    return localProjects;
-  };
-
-  const addNewProject = (name) => {
-    _projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].projects.push(new _project__WEBPACK_IMPORTED_MODULE_0__["default"](name));
-    _saveToLocalStorage();
-  };
-
-  const deleteProject = (projectId) => {
-    const index = _findProjectIndex(projectId);
-    _projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].projects.splice(index, 1);
-    _saveToLocalStorage();
-  };
-
-  const getProjectName = (projectId) => {
-    const projectIndex = _findProjectIndex(projectId);
-    return _projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].projects[projectIndex].name;
-  };
-
-  const updateProject = (name, projectId) => {
-    const index = _findProjectIndex(projectId);
-    _projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].projects[index].name = name;
-    _saveToLocalStorage();
-  };
-
-  const getProjectTodos = (projectId) => {
-    const index = _findProjectIndex(projectId);
-    return _projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].projects[index].todos;
-  };
-
-  const getProjectIdForTodo = (todoId) => {
-    let projectId;
-    _projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].projects.forEach((project) => {
-      project.todos.forEach((todo) => {
-        if (todo.id === todoId) {
-          projectId = project.id;
-        }
-      });
-    });
-    return projectId;
-  };
-
-  const addNewTodo = (title, dueDate, description, priority, projectId) => {
-    const todo = new _todo__WEBPACK_IMPORTED_MODULE_2__["default"](title, dueDate, description, priority);
-    const index = _findProjectIndex(projectId);
-    _projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].projects[index].todos.push(todo);
-    _saveToLocalStorage();
-  };
-
-  const getTodo = (todoId, projectId) => {
-    const projectIndex = _findProjectIndex(projectId);
-    const todoIndex = _findTodoIndex(projectIndex, todoId);
-    return _projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].projects[projectIndex].todos[todoIndex];
-  };
-
-  const deleteTodo = (todoId, projectId) => {
-    const projectIndex = _findProjectIndex(projectId);
-    const todoIndex = _findTodoIndex(projectIndex, todoId);
-    _projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].projects[projectIndex].todos.splice(todoIndex, 1);
-    _saveToLocalStorage();
-  };
-
-  const updateTodo = (
-    title,
-    dueDate,
-    description,
-    priority,
-    projectId,
-    todoId
-  ) => {
-    const projectIndex = _findProjectIndex(projectId);
-    const todoIndex = _findTodoIndex(projectIndex, todoId);
-    const todo = _projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].projects[projectIndex].todos[todoIndex];
-    todo.title = title;
-    todo.dueDate = dueDate;
-    todo.description = description;
-    todo.priority = priority;
-    _saveToLocalStorage();
-  };
-
-  const completeTodo = (todoId, projectId) => {
-    const projectIndex = _findProjectIndex(projectId);
-    const todoIndex = _findTodoIndex(projectIndex, todoId);
-    const todo = _projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].projects[projectIndex].todos[todoIndex];
-    todo.completed = !todo.completed;
-    _saveToLocalStorage();
-  };
-
-  return {
-    loadProjects,
-    addNewProject,
-    deleteProject,
-    getProjectName,
-    getProjectIdForTodo,
-    updateProject,
-    getProjectTodos,
-    addNewTodo,
-    getTodo,
-    deleteTodo,
-    updateTodo,
-    completeTodo,
-  };
-})();
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (programFlow);
-
-
-/***/ }),
-
 /***/ "./src/modules/project.js":
 /*!********************************!*\
   !*** ./src/modules/project.js ***!
@@ -4025,6 +3853,41 @@ class Project {
     this.id = Date.now().toString();
     this.todos = [];
   }
+
+  _findTodoIndex(todoId) {
+    return this.todos.findIndex((todo) => todo.id === todoId);
+  }
+
+  updateName(newName) {
+    this.name = newName;
+  }
+
+  addTodo(todo) {
+    this.todos.push(todo);
+  }
+
+  removeTodo(todoId) {
+    const index = this._findTodoIndex(todoId);
+    this.todos.splice(index, 1);
+  }
+
+  renderHTML() {
+    const element = `
+    <li>
+      <a href="#" data-projectid="${
+        this.id
+      }"><i class="fa-solid fa-list-check"></i>&nbsp;${this.name}</a>
+        ${
+          this.name !== 'Demo Project'
+            ? `<button class="btn"><i data-projectid="${this.id}" class="fa-solid fa-delete-left"></i></button>
+              <button class="btn"><i data-projectid="${this.id}" class="fa-solid fa-pen-to-square"></i></button>`
+            : ``
+        }
+    </li>
+    `;
+
+    return element;
+  }
 }
 
 
@@ -4040,9 +3903,242 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ ProjectManager)
 /* harmony export */ });
+/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! date-fns */ "./node_modules/date-fns/esm/isToday/index.js");
+/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! date-fns */ "./node_modules/date-fns/esm/isThisWeek/index.js");
+/* harmony import */ var _project__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./project */ "./src/modules/project.js");
+/* harmony import */ var _storage_manager__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./storage-manager */ "./src/modules/storage-manager.js");
+/* harmony import */ var _todo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./todo */ "./src/modules/todo.js");
+
+
+
+
+
 class ProjectManager {
   static projects = [];
+
+  static addPrject(projectName) {
+    const project = new _project__WEBPACK_IMPORTED_MODULE_0__["default"](projectName);
+    this.projects.push(project);
+    this.saveData();
+  }
+
+  static removeProject(projectId) {
+    const projectIndex = this._findProjectIndex(projectId);
+    this.projects.splice(projectIndex, 1);
+    this.saveData();
+  }
+
+  static updateProjectName(newName, projectId) {
+    const projectIndex = this._findProjectIndex(projectId);
+    this.projects[projectIndex].updateName(newName);
+    this.saveData();
+  }
+
+  static getProjectNameById(projectId) {
+    const projectIndex = this._findProjectIndex(projectId);
+    return this.projects[projectIndex].name;
+  }
+
+  static addTodo(titile, dueDate, description, priority, projectId) {
+    const projectIndex = this._findProjectIndex(projectId);
+    const todo = new _todo__WEBPACK_IMPORTED_MODULE_2__["default"](titile, dueDate, description, priority);
+    this.projects[projectIndex].addTodo(todo);
+    this.saveData();
+  }
+
+  static removeTodo(todoId) {
+    const projectIndex =
+      this._findProjectIndexAndTodoIndex(todoId).projectIndex;
+    this.projects[projectIndex].removeTodo(todoId);
+    this.saveData();
+  }
+
+  static getTodo(todoId) {
+    const projectIndex =
+      this._findProjectIndexAndTodoIndex(todoId).projectIndex;
+    const todoIndex = this._findProjectIndexAndTodoIndex(todoId).todoIndex;
+    return this.projects[projectIndex].todos[todoIndex];
+  }
+
+  static updateTodo(newTitle, newDueDate, newDescription, newPriority, todoId) {
+    const projectIndex =
+      this._findProjectIndexAndTodoIndex(todoId).projectIndex;
+    const todoIndex = this._findProjectIndexAndTodoIndex(todoId).todoIndex;
+    const todoToUpdate = this.projects[projectIndex].todos[todoIndex];
+    todoToUpdate.update(newTitle, newDueDate, newDescription, newPriority);
+    this.saveData();
+  }
+
+  static getTodosByProjectId(projectId) {
+    const projectIndex = this._findProjectIndex(projectId);
+    return this.projects[projectIndex].todos;
+  }
+
+  // varius method for
+  static getAllTodos() {
+    const allTodos = [];
+    for (const project of this.projects) {
+      for (const todo of project.todos) {
+        allTodos.push(todo);
+      }
+    }
+    return allTodos;
+  }
+
+  static getTodayTodos() {
+    const todayTodos = [];
+    for (const project of this.projects) {
+      for (const todo of project.todos) {
+        if ((0,date_fns__WEBPACK_IMPORTED_MODULE_3__["default"])(new Date(todo.dueDate))) {
+          todayTodos.push(todo);
+        }
+      }
+    }
+
+    return todayTodos;
+  }
+
+  static getTodosForWeek() {
+    const weekTodos = [];
+    for (const project of this.projects) {
+      for (const todo of project.todos) {
+        if ((0,date_fns__WEBPACK_IMPORTED_MODULE_4__["default"])(new Date(todo.dueDate))) {
+          weekTodos.push(todo);
+        }
+      }
+    }
+    return weekTodos;
+  }
+
+  static getUrgentTodos() {
+    const urgentTodos = [];
+    for (const project of this.projects) {
+      for (const todo of project.todos) {
+        if (todo.priority === 'high') {
+          urgentTodos.push(todo);
+        }
+      }
+    }
+    return urgentTodos;
+  }
+
+  static getCompletedTodos() {
+    const completedTodos = [];
+    for (const project of this.projects) {
+      for (const todo of project.todos) {
+        if (todo.completed) {
+          completedTodos.push(todo);
+        }
+      }
+    }
+    return completedTodos;
+  }
+
+  static toggleCompelteTodo(todoId) {
+    const projectIndex =
+      this._findProjectIndexAndTodoIndex(todoId).projectIndex;
+    const todoIndex = this._findProjectIndexAndTodoIndex(todoId).todoIndex;
+    this.projects[projectIndex].todos[todoIndex].toggleComplete();
+    this.saveData();
+  }
+
+  static _findTodoIndex(todoId) {
+    return this._findProjectIndexAndTodoIndex(todoId).todoIndex;
+  }
+
+  static _findProjectIndexAndTodoIndex(todoId) {
+    let projectIndex = 0;
+    let todoIndex = 0;
+    for (let i = 0; i < this.projects.length; i++) {
+      for (let j = 0; j < this.projects[i].todos.length; j++) {
+        if (this.projects[i].todos[j].id === todoId) {
+          projectIndex = i;
+          todoIndex = j;
+          break;
+        }
+      }
+    }
+    return { projectIndex, todoIndex };
+  }
+
+  static _findProjectIndex(projectId) {
+    return this.projects.findIndex((project) => project.id === projectId);
+  }
+
+  static getProjectName(todoId) {
+    let projectName = '';
+    this.projects.forEach((project) => {
+      project.todos.forEach((todo) => {
+        if (todo.id === todoId) {
+          projectName = project.name;
+        }
+      });
+    });
+    return projectName;
+  }
+
+  static saveData() {
+    _storage_manager__WEBPACK_IMPORTED_MODULE_1__["default"].saveToLocalStorage();
+  }
 }
+
+
+/***/ }),
+
+/***/ "./src/modules/storage-manager.js":
+/*!****************************************!*\
+  !*** ./src/modules/storage-manager.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _project__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./project */ "./src/modules/project.js");
+/* harmony import */ var _projects_manager__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./projects-manager */ "./src/modules/projects-manager.js");
+/* harmony import */ var _todo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./todo */ "./src/modules/todo.js");
+
+
+
+
+const manageLocalStorage = (() => {
+  const assignObjects = () => {
+    _projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].projects.forEach((project) => {
+      Object.setPrototypeOf(project, _project__WEBPACK_IMPORTED_MODULE_0__["default"].prototype);
+      project.todos.forEach((todo) => {
+        Object.setPrototypeOf(todo, _todo__WEBPACK_IMPORTED_MODULE_2__["default"].prototype);
+      });
+    });
+  };
+  const saveToLocalStorage = () => {
+    localStorage.setItem('projects', JSON.stringify(_projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].projects));
+  };
+
+  const getProjectsFromLocalStorage = () => {
+    return (_projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].projects =
+      JSON.parse(localStorage.getItem('projects')) || []);
+  };
+
+  const loadProjects = () => {
+    if (getProjectsFromLocalStorage().length === 0) {
+      const demoProject = new _project__WEBPACK_IMPORTED_MODULE_0__["default"]('Demo Project');
+      _projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].projects.push(demoProject);
+      assignObjects();
+      saveToLocalStorage();
+    } else {
+      _projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].projects = getProjectsFromLocalStorage();
+      assignObjects();
+    }
+  };
+
+  return {
+    loadProjects,
+    saveToLocalStorage,
+  };
+})();
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (manageLocalStorage);
 
 
 /***/ }),
@@ -4057,6 +4153,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Todo)
 /* harmony export */ });
+/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! date-fns */ "./node_modules/date-fns/esm/format/index.js");
+/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! date-fns */ "./node_modules/date-fns/esm/isBefore/index.js");
+/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! date-fns */ "./node_modules/date-fns/esm/endOfYesterday/index.js");
+/* harmony import */ var _projects_manager__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./projects-manager */ "./src/modules/projects-manager.js");
+
+
+
 class Todo {
   constructor(title, dueDate, description, priority) {
     this.title = title;
@@ -4067,8 +4170,130 @@ class Todo {
     this.id = Date.now().toString();
   }
 
-  render() {
-    console.log('Hanaha');
+  toggleComplete() {
+    this.completed = !this.completed;
+  }
+
+  update(newTitle, newDueDate, newDescription, newPriority) {
+    this.title = newTitle;
+    this.dueDate = newDueDate;
+    this.description - newDescription;
+    this.priority = newPriority;
+  }
+
+  renderHTML() {
+    const element = `
+    <div class="todo-container">
+      <div class="todo-body ${this.completed ? `completed"` : ``}">
+        <input type="checkbox" ${
+          this.completed ? `checked` : ``
+        } data-todoid="${this.id}" />
+        <p class="todo-title">${this.title}</p>
+        <p class="todo-description">${this.description}</p>
+        <div class="todo-duedate ${(0,date_fns__WEBPACK_IMPORTED_MODULE_1__["default"])(new Date(this.dueDate), 'dd-MM-yyyy')}
+          ${
+            (0,date_fns__WEBPACK_IMPORTED_MODULE_2__["default"])(new Date(this.dueDate), (0,date_fns__WEBPACK_IMPORTED_MODULE_3__["default"])()) ? `expired` : ``
+          }">
+          ${(0,date_fns__WEBPACK_IMPORTED_MODULE_1__["default"])(new Date(this.dueDate), 'dd-MM-yyyy')}
+          ${
+            (0,date_fns__WEBPACK_IMPORTED_MODULE_2__["default"])(new Date(this.dueDate), (0,date_fns__WEBPACK_IMPORTED_MODULE_3__["default"])()) ? ` Expired` : ``
+          }
+        </div>
+        <p class="todo-project-name">${_projects_manager__WEBPACK_IMPORTED_MODULE_0__["default"].getProjectName(
+          this.id
+        )}</p>
+      </div>
+      <div class="actions">
+        <i class="fa-solid fa-flag ${this.priority}" title="${
+      this.priority
+    }"></i>
+        <i class="fa-solid fa-pen-to-square" data-todoid="${this.id}"></i>
+        <i class="fa-solid fa-trash danger" data-todoid="${this.id}"></i>
+      </div>
+    </div>
+    `;
+
+    return element;
+    // const container = document.createElement('div');
+    // container.classList.add('todo-container');
+
+    // const todoBody = document.createElement('div');
+    // todoBody.classList.add('todo-body');
+    // container.appendChild(todoBody);
+
+    // const completed = this.renderCheckbox();
+    // completed.addEventListener('click', () => {
+    //   this.completed();
+    //   this.parentElement.classList.toggle('completed');
+    // });
+    // todoBody.appendChild(completed);
+    // if (this.completed) todoBody.classList.add('completed');
+
+    // const titlePara = document.createElement('p');
+    // titlePara.classList.add('todo-title');
+    // titlePara.textContent = this.title;
+    // todoBody.appendChild(titlePara);
+
+    // const descriptionPara = document.createElement('p');
+    // descriptionPara.classList.add('todo-description');
+    // descriptionPara.textContent = this.description;
+    // todoBody.appendChild(descriptionPara);
+
+    // const dueDatePara = document.createElement('div');
+    // dueDatePara.classList.add('todo-duedate');
+    // dueDatePara.textContent = format(new Date(this.dueDate), 'dd-MM-yyyy');
+    // todoBody.appendChild(dueDatePara);
+    // if (isBefore(new Date(this.dueDate), endOfYesterday())) {
+    //   dueDatePara.classList.add('expired');
+    //   dueDatePara.textContent += ' Expired';
+    // }
+
+    // const projectNamePara = document.createElement('p');
+    // projectNamePara.classList.add('todo-project-name');
+    // projectNamePara.textContent = ProjectManager.getProjectName(this.id);
+    // todoBody.appendChild(projectNamePara);
+
+    // const actions = document.createElement('div');
+    // actions.classList.add('actions');
+    // container.appendChild(actions);
+
+    // const priorityFlag = document.createElement('i');
+    // priorityFlag.classList.add('fa-solid', 'fa-flag');
+    // priorityFlag.classList.add(this.priority);
+    // priorityFlag.title = this.priority;
+    // actions.appendChild(priorityFlag);
+
+    // const editTodoFlag = document.createElement('i');
+    // editTodoFlag.classList.add('fa-solid', 'fa-pen-to-square');
+    // editTodoFlag.setAttribute('data-todoid', this.id);
+    // // editTodoFlag.addEventListener('click', () => {
+    // //   enterEditTodoMode(todo.id, projectId);
+    // //   todoModal.style.display = 'block';
+    // // });
+    // actions.appendChild(editTodoFlag);
+
+    // const deleteTodoFlag = document.createElement('i');
+    // deleteTodoFlag.classList.add('fa-solid', 'fa-trash', 'danger');
+    // deleteTodoFlag.setAttribute('data-todoid', this.id);
+    // // deleteTodoFlag.addEventListener(
+    // //   'click',
+    // //   deleteTodo.bind(this, todo.id, projectId)
+    // // );
+    // actions.appendChild(deleteTodoFlag);
+
+    // todosList.appendChild(container);
+
+    // // return the container for todo object
+    // return container;
+  }
+
+  renderCheckbox() {
+    const checkbox = doc.createElement('input');
+    checkbox.type = 'checkbox';
+    if (this.completed) {
+      checkbox.checked = true;
+    }
+    return checkbox;
   }
 }
 
@@ -4156,11 +4381,314 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ "./src/styles.css");
-/* harmony import */ var _modules_program_UI__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/program-UI */ "./src/modules/program-UI.js");
+/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! date-fns */ "./node_modules/date-fns/esm/isBefore/index.js");
+/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! date-fns */ "./node_modules/date-fns/esm/endOfYesterday/index.js");
+/* harmony import */ var _modules_projects_manager__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/projects-manager */ "./src/modules/projects-manager.js");
+/* harmony import */ var _modules_storage_manager__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/storage-manager */ "./src/modules/storage-manager.js");
 
 
 
-// programUI(document);
+
+
+
+// IIFE for DOM manipulation
+((doc) => {
+  // modals elements
+  const addProjectBtn = doc.querySelector('.add-project');
+  const projectModal = doc.querySelector('.project-modal');
+  const addTodoBtn = doc.querySelector('.add-todo');
+  const todoModal = doc.querySelector('.todo-modal');
+  const todoCloseBtn = doc.querySelector('.close-todo');
+  const projectCloseBtn = doc.querySelector('.project-close');
+  const projectForm = doc.querySelector('#project');
+  const todoForm = doc.querySelector('#todo');
+
+  // todoForm Form Elements
+  const todoButton = todoForm.querySelector('button');
+  const todoHeader = todoForm.querySelector('h2');
+  const titleInput = todoForm.querySelector('#todo-title');
+  const dueDateInput = todoForm.querySelector('#due-date');
+  const descriptionInput = todoForm.querySelector('#description');
+  const priorityInput = todoForm.querySelector('#priority');
+
+  // addProject Form Elements
+  const projectFormHeader = projectForm.querySelector('h2');
+  const projectButton = projectForm.querySelector('button');
+  const projectNameInput = projectForm.querySelector('input');
+
+  // project container
+  const projectContainer = doc.querySelector('.projects');
+  const projectNameHeader = doc.querySelector('.project-name');
+  const todosList = doc.querySelector('.todos-list');
+
+  // filtering elements
+  const categoriesElements = doc.querySelectorAll('.main-menu ul li a');
+
+  // variables to track the currnt project category and todo by id
+  let currentProjectIdOrCategory = '';
+  let currentTodoId = '';
+
+  categoriesElements.forEach((categoryElement) => {
+    categoryElement.addEventListener('click', (e) => {
+      const category = e.target.className;
+      currentProjectIdOrCategory = category;
+      projectNameHeader.textContent =
+        category[0].toUpperCase() + category.substring(1);
+      doc.querySelector('.add-todo').style.display = 'none';
+      renderTodosForCurrentProjectOrCategory();
+    });
+  });
+
+  // Load all projects and render
+  window.addEventListener('load', () => {
+    _modules_storage_manager__WEBPACK_IMPORTED_MODULE_2__["default"].loadProjects();
+    renderAllProjectsAndEvents();
+    // choose default project
+    currentProjectIdOrCategory = _modules_projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].projects[0].id;
+    renderTodosForCurrentProjectOrCategory();
+  });
+
+  // hide modal and reset project form when it closed
+  function hideModalAndResetProjectForm() {
+    projectModal.style.display = 'none';
+    projectForm.reset();
+  }
+
+  // hide modal and reset todo form when it closed
+  function hideModalAndReseTodoForm() {
+    todoModal.style.display = 'none';
+    todoForm.reset();
+  }
+
+  // change elements for new project form
+  function enterNewProjectMode() {
+    projectFormHeader.textContent = 'Add New Project';
+    projectNameInput.value = '';
+    projectButton.innerHTML =
+      '<i class="fa-solid fa-folder-plus"></i> Add Project';
+  }
+
+  // change elements for new todo form
+  function enterNewTodoMode() {
+    todoHeader.textContent = 'Add Todo Form';
+    todoButton.innerHTML = '<i class="fa-solid fa-square-plus"></i> Add Todo';
+    titleInput.value = '';
+    dueDateInput.valueAsDate = new Date();
+    descriptionInput.value = '';
+    priorityInput.value = 'low';
+  }
+
+  // change elements for edit project form
+  function enterEditProjectMode() {
+    projectFormHeader.textContent = 'Edit Project Form';
+    projectButton.innerHTML =
+      '<i class="fa-solid fa-square-pen"></i> Edit Project';
+    projectNameInput.value = _modules_projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].getProjectNameById(
+      currentProjectIdOrCategory
+    );
+  }
+
+  // add new project click event
+  addProjectBtn.addEventListener('click', () => {
+    enterNewProjectMode();
+    projectModal.style.display = 'block';
+  });
+
+  // close model add or edit project
+  projectCloseBtn.addEventListener('click', hideModalAndResetProjectForm);
+
+  // add new todo click event
+  addTodoBtn.addEventListener('click', () => {
+    enterNewTodoMode();
+    todoModal.style.display = 'block';
+  });
+
+  // close moodal add or edit todo
+  todoCloseBtn.addEventListener('click', hideModalAndReseTodoForm);
+
+  function renderAllProjectsAndEvents() {
+    projectContainer.innerHTML = '';
+
+    // renders the project using renderHTML method
+    _modules_projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].projects.forEach((project) => {
+      const projectLI = project.renderHTML();
+      projectContainer.insertAdjacentHTML('beforeend', projectLI);
+    });
+
+    // adding events when project clicked to render its todos
+    const allProjects = projectContainer.querySelectorAll('li a');
+    allProjects.forEach((projectNode) => {
+      projectNode.addEventListener('click', (e) => {
+        doc.querySelector('.add-todo').style.display = 'block';
+        // Show all todos for a project
+        currentProjectIdOrCategory = e.target.getAttribute('data-projectid');
+        projectNameHeader.textContent = _modules_projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].getProjectNameById(
+          currentProjectIdOrCategory
+        );
+        renderTodosForCurrentProjectOrCategory();
+      });
+    });
+
+    // adding event to delete a project
+    const allProjectDeleteButtons =
+      projectContainer.querySelectorAll('i.fa-delete-left');
+    console.log(allProjectDeleteButtons);
+    allProjectDeleteButtons.forEach((deleteButtonNode) => {
+      deleteButtonNode.addEventListener('click', (e) => {
+        const projectId = e.target.getAttribute('data-projectid');
+        _modules_projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].removeProject(projectId);
+        renderAllProjectsAndEvents();
+      });
+    });
+
+    // adding event to edit project name
+    const allProjecEditButtons =
+      projectContainer.querySelectorAll('i.fa-pen-to-square');
+    console.log(allProjecEditButtons);
+    allProjecEditButtons.forEach((editButtonNode) => {
+      editButtonNode.addEventListener('click', (e) => {
+        // Edit method
+        currentProjectIdOrCategory = e.target.getAttribute('data-projectid');
+        enterEditProjectMode();
+        projectModal.style.display = 'block';
+        renderAllProjectsAndEvents();
+      });
+    });
+  }
+
+  // renders todos by the choosen category of a specific project by its id
+  function renderTodosForCurrentProjectOrCategory() {
+    let todos;
+    switch (currentProjectIdOrCategory) {
+      case 'all':
+        todos = _modules_projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].getAllTodos();
+        break;
+      case 'today':
+        todos = _modules_projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].getTodayTodos();
+        break;
+      case 'week':
+        todos = _modules_projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].getTodosForWeek();
+        break;
+      case 'urgent':
+        todos = _modules_projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].getUrgentTodos();
+        break;
+      case 'completed':
+        todos = _modules_projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].getCompletedTodos();
+        break;
+      default:
+        todos = _modules_projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].getTodosByProjectId(currentProjectIdOrCategory);
+        break;
+    }
+
+    renderTodos(todos);
+  }
+
+  // renders the todos - generic
+  function renderTodos(todos) {
+    todosList.innerHTML = '';
+
+    // renders todos using renderHTML method
+    todos.forEach((todo) => {
+      const div = todo.renderHTML();
+      todosList.insertAdjacentHTML('beforeend', div);
+    });
+
+    // add events to check the checkbox and change the status of the todo
+    const allCheckboxes = todosList.querySelectorAll('input[type="checkbox"]');
+    allCheckboxes.forEach((checkbox) => {
+      checkbox.addEventListener('click', (e) => {
+        const todoIndex = e.target.getAttribute('data-todoid');
+        _modules_projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].toggleCompelteTodo(todoIndex);
+        e.target.parentElement.classList.toggle('completed');
+      });
+    });
+
+    // add event for editing the todo
+    const allEditTodoButtons = todosList.querySelectorAll('i.fa-pen-to-square');
+    allEditTodoButtons.forEach((editButtonNode) => {
+      editButtonNode.addEventListener('click', (e) => {
+        const todoId = e.target.getAttribute('data-todoid');
+        enterEditTodoMode(todoId);
+        todoModal.style.display = 'block';
+      });
+    });
+
+    // add event to delete a todo
+    const allDeleteTodoButtons = todosList.querySelectorAll('i.fa-trash');
+    allDeleteTodoButtons.forEach((deleteButtonNode) => {
+      deleteButtonNode.addEventListener('click', (e) => {
+        const todoId = e.target.getAttribute('data-todoid');
+        _modules_projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].removeTodo(todoId);
+        renderTodosForCurrentProjectOrCategory();
+      });
+    });
+  }
+
+  // handler for add or edit project form submition
+  projectForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (projectButton.textContent.includes('Add')) {
+      if (!projectNameInput.value) {
+        alert('Please enter a name for the project');
+        return;
+      }
+      _modules_projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].addPrject(projectNameInput.value);
+    } else {
+      _modules_projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].updateProjectName(
+        projectNameInput.value,
+        currentProjectIdOrCategory
+      );
+    }
+    hideModalAndResetProjectForm();
+    renderAllProjectsAndEvents();
+  });
+
+  // change elements for edit todo form
+  function enterEditTodoMode(todoId) {
+    const todo = _modules_projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].getTodo(todoId);
+    currentTodoId = todoId;
+    todoHeader.textContent = 'Edit Todo Form';
+    todoButton.innerHTML =
+      '<i class="fa-solid fa-pen-to-square"></i> Edit Todo';
+    titleInput.value = todo.title;
+    dueDateInput.valueAsDate = new Date(todo.dueDate);
+    descriptionInput.value = todo.description;
+    priorityInput.value = todo.priority;
+  }
+
+  // handler for add or edit todo submition
+  todoForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const projectId = currentProjectIdOrCategory;
+    const todoId = currentTodoId;
+
+    if (todoButton.textContent.includes('Add')) {
+      // check if dueDate is in the past
+      if ((0,date_fns__WEBPACK_IMPORTED_MODULE_3__["default"])(new Date(dueDateInput.value), (0,date_fns__WEBPACK_IMPORTED_MODULE_4__["default"])())) {
+        alert('please choose present or a future date!');
+        return;
+      }
+      _modules_projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].addTodo(
+        titleInput.value,
+        new Date(dueDateInput.value),
+        descriptionInput.value,
+        priorityInput.value,
+        projectId
+      );
+    } else {
+      _modules_projects_manager__WEBPACK_IMPORTED_MODULE_1__["default"].updateTodo(
+        titleInput.value,
+        new Date(dueDateInput.value),
+        descriptionInput.value,
+        priorityInput.value,
+        todoId
+      );
+    }
+    hideModalAndReseTodoForm();
+    renderTodosForCurrentProjectOrCategory();
+  });
+})(document);
 
 })();
 
