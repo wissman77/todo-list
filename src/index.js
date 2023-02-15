@@ -306,7 +306,7 @@ import todoListIcon from './to-do-list.png';
   // add fivicon
   function addFivicon() {
     const link = doc.createElement('link');
-    link.rel = 'icon';
+    link.rel = 'shortcut icon';
     link.type = 'image/png';
     link.href = todoListIcon;
     doc.head.appendChild(link);

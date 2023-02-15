@@ -4736,7 +4736,7 @@ __webpack_require__.r(__webpack_exports__);
   // add fivicon
   function addFivicon() {
     const link = doc.createElement('link');
-    link.rel = 'icon';
+    link.rel = 'shortcut icon';
     link.type = 'image/png';
     link.href = _to_do_list_png__WEBPACK_IMPORTED_MODULE_3__;
     doc.head.appendChild(link);
