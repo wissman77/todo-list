@@ -4298,6 +4298,16 @@ class Todo {
 }
 
 
+/***/ }),
+
+/***/ "./src/to-do-list.png":
+/*!****************************!*\
+  !*** ./src/to-do-list.png ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "0902071c7008b211ec56.png";
+
 /***/ })
 
 /******/ 	});
@@ -4351,6 +4361,18 @@ class Todo {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -4367,6 +4389,26 @@ class Todo {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
@@ -4381,10 +4423,12 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ "./src/styles.css");
-/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! date-fns */ "./node_modules/date-fns/esm/isBefore/index.js");
-/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! date-fns */ "./node_modules/date-fns/esm/endOfYesterday/index.js");
+/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! date-fns */ "./node_modules/date-fns/esm/isBefore/index.js");
+/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! date-fns */ "./node_modules/date-fns/esm/endOfYesterday/index.js");
 /* harmony import */ var _modules_projects_manager__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/projects-manager */ "./src/modules/projects-manager.js");
 /* harmony import */ var _modules_storage_manager__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/storage-manager */ "./src/modules/storage-manager.js");
+/* harmony import */ var _to_do_list_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./to-do-list.png */ "./src/to-do-list.png");
+
 
 
 
@@ -4665,7 +4709,7 @@ __webpack_require__.r(__webpack_exports__);
 
     if (todoButton.textContent.includes('Add')) {
       // check if dueDate is in the past
-      if ((0,date_fns__WEBPACK_IMPORTED_MODULE_3__["default"])(new Date(dueDateInput.value), (0,date_fns__WEBPACK_IMPORTED_MODULE_4__["default"])())) {
+      if ((0,date_fns__WEBPACK_IMPORTED_MODULE_4__["default"])(new Date(dueDateInput.value), (0,date_fns__WEBPACK_IMPORTED_MODULE_5__["default"])())) {
         alert('please choose present or a future date!');
         return;
       }
@@ -4688,6 +4732,17 @@ __webpack_require__.r(__webpack_exports__);
     hideModalAndReseTodoForm();
     renderTodosForCurrentProjectOrCategory();
   });
+
+  // add fivicon
+  function addFivicon() {
+    const link = doc.createElement('link');
+    link.rel = 'icon';
+    link.type = 'image/png';
+    link.href = _to_do_list_png__WEBPACK_IMPORTED_MODULE_3__;
+    doc.head.appendChild(link);
+  }
+
+  addFivicon();
 })(document);
 
 })();
