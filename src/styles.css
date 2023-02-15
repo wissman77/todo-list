@@ -364,4 +364,9 @@ footer a {
   .menu {
     min-width: 50vw;
   }
+
+  .todo-modal-content,
+  .project-modal-content {
+    width: 80%;
+  }
 }
