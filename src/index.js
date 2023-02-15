@@ -3,6 +3,7 @@ import './styles.css';
 import { endOfYesterday, isBefore } from 'date-fns';
 import ProjectManager from './modules/projects-manager';
 import manageLocalStorage from './modules/storage-manager';
+import todoListIcon from './to-do-list.png';
 
 // IIFE for DOM manipulation
 ((doc) => {
@@ -301,4 +302,15 @@ import manageLocalStorage from './modules/storage-manager';
     hideModalAndReseTodoForm();
     renderTodosForCurrentProjectOrCategory();
   });
+
+  // add fivicon
+  function addFivicon() {
+    const link = doc.createElement('link');
+    link.rel = 'icon';
+    link.type = 'image/png';
+    link.href = todoListIcon;
+    doc.head.appendChild(link);
+  }
+
+  addFivicon();
 })(document);
